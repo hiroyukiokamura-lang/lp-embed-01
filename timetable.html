@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BEYOND FORUM 2026 | TIMETABLE</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 'sans-serif'] }, colors: { beyond: { bg: '#f8fafc', primary: '#0ea5e9', secondary: '#14b8a6' } } } } }
+</script>
+<style>body { background-color: #f8fafc; color: #334155; }
+.text-gradient { background: linear-gradient(135deg, #0ea5e9 0%, #14b8a6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.bg-gradient-custom { background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%); }
+.timetable-wrapper { min-width: 1900px; }
+.time-col { width: 80px; position: sticky; left: 0; z-index: 40; }
+.stage-header { height: 80px; position: sticky; top: 0; z-index: 30; }
+.timeline-grid { background-image: linear-gradient(to bottom, #e2e8f0 1px, transparent 1px); background-size: 100% 120px; }
+.session-card { position: absolute; left: 6px; right: 6px; border-radius: 6px; padding: 8px; overflow: visible; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); border-width: 1px; border-style: solid; cursor: default; z-index: 10; min-height: var(--base-height); height: auto; box-sizing: border-box; }
+.session-card:hover { height: auto !important; min-height: var(--base-height); z-index: 50; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.05); }
+.session-content { display: block; overflow: visible; text-overflow: clip; }
+.climbers-track { flex: 0 0 380px; border-left: 1px solid rgba(251, 146, 60, 0.35); background: linear-gradient(180deg, rgba(255, 247, 237, 0.72) 0%, rgba(255, 251, 235, 0.35) 42%, rgba(255,255,255,0.3) 100%); }
+.climbers-stage-header { background: radial-gradient(circle at 18% 20%, rgba(251, 191, 36, 0.36), transparent 28%), linear-gradient(135deg, #111827 0%, #431407 48%, #f97316 100%); color: #fff7ed; box-shadow: inset 0 -1px 0 rgba(255,255,255,0.16); }
+.climbers-card { left: 10px; right: 10px; width: auto; border-color: rgba(249, 115, 22, 0.45); background: linear-gradient(135deg, rgba(255, 247, 237, 0.98) 0%, rgba(254, 243, 199, 0.96) 100%); color: #431407; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.7); }
+.climbers-card:hover { border-color: rgba(234, 88, 12, 0.8); box-shadow: 0 18px 32px -14px rgba(154, 52, 18, 0.42), 0 0 0 1px rgba(251,146,60,0.28); }
+.climbers-time { color: #c2410c; }
+.climbers-card.cl-short { display: flex; align-items: flex-start; gap: 6px; padding: 3px 8px; border-radius: 5px; }
+.climbers-card.cl-short .climbers-time { flex: 0 0 70px; margin: 0 !important; font-size: 9px; line-height: 1.05; }
+.climbers-card.cl-short .session-content { display: block; flex: 1 1 auto; min-width: 0; margin: 0 !important; font-size: 9.2px; line-height: 1.1; white-space: normal; overflow: visible; text-overflow: clip; }
+.climbers-card .session-content { display: block; -webkit-line-clamp: unset; -webkit-box-orient: initial; white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.25; }
+.climbers-card:not(.cl-short) .climbers-time { margin-bottom: 4px !important; }
+</style>
+</head>
+<body class="antialiased pb-20">
+<header class="bg-gradient-custom py-12 px-4 shadow-sm border-b border-gray-100 relative overflow-hidden">
+<div class="absolute top-0 right-0 opacity-40"><svg height="400" viewbox="0 0 200 200" width="400" xmlns="http://www.w3.org/2000/svg"><path d="M45.7,-76.4C58.9,-69.3,69.2,-55.4,78.2,-41.2C87.2,-27,94.9,-13.5,93.6,-0.8C92.2,12,81.8,23.9,72.6,36.5C63.4,49.1,55.3,62.3,43.2,71.1C31.2,79.9,15.6,84.3,0.7,83.1C-14.3,81.9,-28.5,75.1,-41.1,66.6C-53.7,58,-64.7,47.7,-72.1,35.1C-79.5,22.5,-83.4,7.6,-82.1,-6.6C-80.8,-20.9,-74.4,-34.5,-64.8,-45.3C-55.2,-56,-42.5,-63.9,-29.3,-70.7C-16.1,-77.6,-8.1,-83.4,3.2,-88.7C14.4,-93.9,28.9,-98.6,45.7,-76.4Z" fill="#ffffff" transform="translate(100 100)"></path></svg></div>
+<div class="max-w-6xl mx-auto relative z-10 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+<div><h2 class="text-sm md:text-base font-bold tracking-widest text-teal-600 mb-2">人財の可能性を武器にする</h2><h1 class="text-4xl md:text-5xl font-black tracking-tight mb-4 text-slate-800">BEYOND FORUM <span class="text-gradient">2026</span></h1><p class="text-slate-600 font-medium">同時開催：Climbers 2026 ー乗り越える。日本最大級のビジネスカンファレンスー</p></div>
+<div class="mt-6 md:mt-0 text-right text-slate-700"><p class="text-xl font-bold">2026年6月9日(火) - 10日(水)</p><p class="text-sm text-slate-500 mt-1">@東京ビッグサイト 南1,2ホール</p></div>
+</div>
+</header>
+<main class="max-w-[1400px] mx-auto px-4 py-8">
+<div class="flex justify-center mb-5 space-x-4 border-b border-gray-200 pb-px">
+<button class="tab-btn px-8 py-4 font-bold text-lg border-b-4 border-teal-500 text-teal-600 focus:outline-none transition-colors" id="tab-day1" onclick="switchTab('day1')">DAY 1 <span class="text-sm font-normal ml-1 text-teal-600/80">6/9 (火)</span></button>
+<button class="tab-btn px-8 py-4 font-bold text-lg border-b-4 border-transparent text-gray-400 hover:text-gray-600 focus:outline-none transition-colors" id="tab-day2" onclick="switchTab('day2')">DAY 2 <span class="text-sm font-normal ml-1">6/10 (水)</span></button>
+</div>
+<p class="text-sm text-slate-500 text-right mb-4">※横にスクロールして全体をご覧いただけます。枠にマウスを乗せると詳細が表示されます。</p>
+<div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-x-auto relative">
+<div class="timetable-wrapper">
+<div class="tab-content flex relative" id="day1">
+<div class="time-col flex-shrink-0 bg-white/95 backdrop-blur border-r border-slate-200">
+<div class="stage-header border-b border-slate-200"></div>
+<div class="h-[1380px] relative timeline-grid border-r border-slate-200/50">
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 0px;">9:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 120px;">10:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 240px;">11:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 360px;">12:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 480px;">13:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 600px;">14:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 720px;">15:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 840px;">16:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 960px;">17:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 1080px;">18:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 1200px;">19:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 1320px;">20:00</div>
+</div>
+</div>
+<div class="flex-1 flex relative bg-slate-50/20">
+<div class="absolute inset-0 pointer-events-none timeline-grid z-0"></div>
+<div class="absolute left-0 right-0 bg-slate-100/45 pointer-events-none z-0 flex items-center justify-center border-y border-slate-200/60" style="top: 360px; height: 120px;">
+<span class="text-sm font-bold text-slate-400 tracking-widest opacity-50">LUNCH / EXHIBITION / NETWORKING</span>
+</div>
+<div class="absolute left-0 right-0 bg-slate-100/30 pointer-events-none z-0 flex items-center justify-center border-y border-slate-200/60" style="top: 840px; height: 120px;">
+<span class="text-sm font-bold text-slate-400 tracking-widest opacity-50">体験ゾーン・AI デモ・法改正相談ブース</span>
+</div>
+<div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-rose-600 text-lg leading-none">ステージA</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">CHRO AGENDA</p>
+</div>
+<div class="h-[1380px] relative z-10"><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 60px; min-height: 80px; height: auto; --base-height: 80px;" title="組織の境界を越える人材戦略。CHROが拓く人的資本経営の次の一手">
+<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">9:30 - 10:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">組織の境界を越える人材戦略。CHROが拓く人的資本経営の次の一手</div>
+</div><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 240px; min-height: 80px; height: auto; --base-height: 80px;" title="AI時代、組織の”学び”はアップデートされたか？個人と企業の成長を両立させる人財戦略（仮）">
+<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">11:00 - 11:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AI時代、組織の”学び”はアップデートされたか？個人と企業の成長を両立させる人財戦略（仮）</div>
+</div><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 420px; min-height: 80px; height: auto; --base-height: 80px;" title="“愛される企業”への変革。組織のプライドを取り戻す経営">
+<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">12:30 - 13:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">“愛される企業”への変革。組織のプライドを取り戻す経営</div>
+</div><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 600px; min-height: 80px; height: auto; --base-height: 80px;" title='"個"の充足を"組織"の熱量へ変える、ウェルビーイング経営の本質（仮）'>
+<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">14:00 - 14:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">"個"の充足を"組織"の熱量へ変える、ウェルビーイング経営の本質（仮）</div>
+</div><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 780px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">15:30 - 16:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-sky-600 text-lg leading-none">ステージB</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">NewsPicks HR ステージ</p>
+</div>
+<div class="h-[1380px] relative z-10"><div class="session-card bg-sky-50 border-sky-200 text-sky-900" style="top: 160px; min-height: 80px; height: auto; --base-height: 80px;" title="カルチャーの「醸成」は誰の仕事か。HRBPが仕掛ける、組織文化の設計図（仮）">
+<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">10:20 - 11:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">カルチャーの「醸成」は誰の仕事か。HRBPが仕掛ける、組織文化の設計図（仮）</div>
+</div><div class="session-card bg-sky-50 border-sky-200 text-sky-900" style="top: 340px; min-height: 80px; height: auto; --base-height: 80px;" title="AIが採用を変える時代に、人事が問い直すべきは「ツール」より「人材観」だ（仮）">
+<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">11:50 - 12:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AIが採用を変える時代に、人事が問い直すべきは「ツール」より「人材観」だ（仮）</div>
+</div><div class="session-card bg-sky-50 border-sky-200 text-sky-900" style="top: 520px; min-height: 80px; height: auto; --base-height: 80px;" title="バーンアウトは「突然」じゃない。見逃され続けるサインと、人事が仕掛ける予防設計（仮）">
+<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">13:20 - 14:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">バーンアウトは「突然」じゃない。見逃され続けるサインと、人事が仕掛ける予防設計（仮）</div>
+</div><div class="session-card bg-sky-50 border-sky-200 text-sky-900" style="top: 700px; min-height: 80px; height: auto; --base-height: 80px;" title="AI時代の組織未来予想図（仮）">
+<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">14:50 - 15:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AI時代の組織未来予想図（仮）</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-emerald-600 text-lg leading-none">ステージC</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">人材不足を乗り越える Lab<br/>Powered by HiPro</p>
+</div>
+<div class="h-[1380px] relative z-10"><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 160px; min-height: 80px; height: auto; --base-height: 80px;" title="DXを前進させるIT組織はどう人材を組み合わせているのか？〜採用依存から脱する組織設計論〜">
+<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">10:20 - 11:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">DXを前進させるIT組織はどう人材を組み合わせているのか？〜採用依存から脱する組織設計論〜</div>
+</div><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 320px; min-height: 80px; height: auto; --base-height: 80px;" title="AI時代のIT部門は、何を内製し何を外部化すべきか〜IT部門に求められる人材戦略の再設計〜">
+<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">11:40 - 12:20</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AI時代のIT部門は、何を内製し何を外部化すべきか〜IT部門に求められる人材戦略の再設計〜</div>
+</div><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 480px; min-height: 80px; height: auto; --base-height: 80px;" title="新規事業は“社内の延長線”では立ち上がらない〜成功確率を高める外部知の取り込み方〜">
+<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">13:00 - 13:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">新規事業は“社内の延長線”では立ち上がらない〜成功確率を高める外部知の取り込み方〜</div>
+</div><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 640px; min-height: 80px; height: auto; --base-height: 80px;" title="採用依存から脱する人的資本経営へ〜人事が再設計する“社内人材×外部人材×AI”の最適ポートフォリオ〜">
+<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">14:20 - 15:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">採用依存から脱する人的資本経営へ〜人事が再設計する“社内人材×外部人材×AI”の最適ポートフォリオ〜</div>
+</div><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 800px; min-height: 80px; height: auto; --base-height: 80px;" title="データ人材を抱えなくても、AI実装は進められるのか〜事業成果につなげる現実的アプローチ〜">
+<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">15:40 - 16:20</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">データ人材を抱えなくても、AI実装は進められるのか〜事業成果につなげる現実的アプローチ〜</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-indigo-600 text-lg leading-none">ステージD</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">AI活用ワークショップ</p>
+</div>
+<div class="h-[1380px] relative z-10"><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 240px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">11:00 - 11:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 420px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">12:30 - 13:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 600px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">14:00 - 14:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 780px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">15:30 - 16:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-fuchsia-600 text-lg leading-none">ステージE</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR 情報交換会</p>
+</div>
+<div class="h-[1380px] relative z-10"><div class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900" style="top: 240px; min-height: 80px; height: auto; --base-height: 80px;" title="ジョブ型人事制度の未来を考える情報交換会（仮）">
+<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">11:00 - 11:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">ジョブ型人事制度の未来を考える情報交換会（仮）</div>
+</div><div class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900" style="top: 420px; min-height: 80px; height: auto; --base-height: 80px;" title="次世代経営者のサクセッションプラン事例 情報交換会（仮）">
+<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">12:30 - 13:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">次世代経営者のサクセッションプラン事例 情報交換会（仮）</div>
+</div><div class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900" style="top: 600px; min-height: 80px; height: auto; --base-height: 80px;" title="AI活用時代におけるパフォーマンス評価のあり方を考える 情報交換会（仮）">
+<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">14:00 - 14:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AI活用時代におけるパフォーマンス評価のあり方を考える 情報交換会（仮）</div>
+</div><div class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900" style="top: 780px; min-height: 80px; height: auto; --base-height: 80px;" title="AIを活用した新入社員オンボーディングプラン 情報交換会（仮）">
+<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">15:30 - 16:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AIを活用した新入社員オンボーディングプラン　情報交換会（仮）</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-purple-600 text-lg leading-none">ステージF</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR Solution Academy</p>
+</div>
+<div class="h-[1380px] relative z-10"><div class="session-card bg-purple-50 border-purple-200 text-purple-900" style="top: 240px; min-height: 120px; height: auto; --base-height: 120px;" title="AI時代に求められる「感情マネジメント力」">
+<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">11:00 - 12:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AI時代に求められる「感情マネジメント力」</div>
+</div><div class="session-card bg-purple-50 border-purple-200 text-purple-900" style="top: 420px; min-height: 120px; height: auto; --base-height: 120px;" title="フィードバック経営 -「沈黙の組織」から「高め合う組織」へ（仮）">
+<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">12:30 - 13:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">フィードバック経営 -「沈黙の組織」から「高め合う組織」へ（仮）</div>
+</div><div class="session-card bg-purple-50 border-purple-200 text-purple-900" style="top: 600px; min-height: 120px; height: auto; --base-height: 120px;" title="「指示」を捨て、「生態系」を創る —— 変化を味方につける自己進化型組織のつくり方（仮）">
+<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">14:00 - 15:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">「指示」を捨て、「生態系」を創る —— 変化を味方につける自己進化型組織のつくり方（仮）</div>
+</div><div class="session-card bg-purple-50 border-purple-200 text-purple-900" style="top: 780px; min-height: 180px; height: auto; --base-height: 180px;" title="90分で経営を疑似体験する、事業開発人材の育成ワークショップ「T2D3」（仮）">
+<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">15:30 - 17:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">90分で経営を疑似体験する、事業開発人材の育成ワークショップ「T2D3」（仮）</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-amber-600 text-lg leading-none">ステージG</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR Solution Academy</p>
+</div>
+<div class="h-[1380px] relative z-10"><div class="session-card bg-amber-50 border-amber-200 text-amber-900" style="top: 240px; min-height: 120px; height: auto; --base-height: 120px;" title="AI時代のマネジメント進化論 〜罰ゲーム化を乗り越える管理職の再設計〜（仮）">
+<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">11:00 - 12:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AI時代のマネジメント進化論 〜罰ゲーム化を乗り越える管理職の再設計〜（仮）</div>
+</div><div class="session-card bg-amber-50 border-amber-200 text-amber-900" style="top: 420px; min-height: 120px; height: auto; --base-height: 120px;" title="人事部がない会社の最初の一手！経営と現場を結ぶ「人材育成設計」">
+<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">12:30 - 13:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">人事部がない会社の最初の一手！経営と現場を結ぶ「人材育成設計」</div>
+</div><div class="session-card bg-amber-50 border-amber-200 text-amber-900" style="top: 600px; min-height: 120px; height: auto; --base-height: 120px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">14:00 - 15:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-amber-50 border-amber-200 text-amber-900" style="top: 780px; min-height: 120px; height: auto; --base-height: 120px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">15:30 - 16:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div></div>
+</div><div class="climbers-track relative group">
+<div class="stage-header climbers-stage-header border-b border-orange-200 flex flex-col items-center justify-center px-3 text-center">
+<h3 class="font-black text-white text-lg leading-none">Climbers X LIVE</h3>
+<p class="text-[9px] text-orange-100 mt-2 font-black text-center leading-tight tracking-wide">乗り越える。日本最大級の変革者カンファレンス</p>
+</div>
+<div class="h-[1380px] relative z-10"><div class="session-card climbers-card cl-short" style="top: 440px; min-height: 20px; height: auto; --base-height: 20px;" title="DAY1 オープニング">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">12:40 - 12:50</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">DAY1 オープニング</div>
+</div><div class="session-card climbers-card" style="top: 460px; min-height: 80px; height: auto; --base-height: 80px;" title="思考の探求者 又吉直樹による人生の特別講義">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">12:50 - 13:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">思考の探求者<br/>又吉直樹による人生の特別講義</div>
+</div><div class="session-card climbers-card cl-short" style="top: 540px; min-height: 40px; height: auto; --base-height: 40px;" title="“おもろい”を問い直す テレビ業界の名物プロデューサーの人生の特別講義">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">13:30 - 13:50</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">“おもろい”を問い直す<br/>テレビ業界の名物プロデューサーの人生の特別講義</div>
+</div><div class="session-card climbers-card cl-short" style="top: 580px; min-height: 40px; height: auto; --base-height: 40px;" title="現代社会の悩みに寄り添う 松長潤慶による人生の特別講義">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">13:50 - 14:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">現代社会の悩みに寄り添う<br/>松長潤慶による人生の特別講義</div>
+</div><div class="session-card climbers-card" style="top: 660px; min-height: 80px; height: auto; --base-height: 80px;" title="「JAPANを率いた挑戦と日本野球の未来」 〜選手・編成・監督で見た“世界一を目指すプロセス”と自律的な挑戦〜">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">14:30 - 15:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">「JAPANを率いた挑戦と日本野球の未来」<br/>〜選手・編成・監督で見た“世界一を目指すプロセス”と自律的な挑戦〜</div>
+</div><div class="session-card climbers-card" style="top: 740px; min-height: 60px; height: auto; --base-height: 60px;" title="Coming Soon">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">15:10 - 15:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card climbers-card" style="top: 800px; min-height: 80px; height: auto; --base-height: 80px;" title="今注目の二人 対談決定 ビジネスパーソン必見の特別講義">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">15:40 - 16:20</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">今注目の二人　対談決定<br/>ビジネスパーソン必見の特別講義</div>
+</div><div class="session-card climbers-card" style="top: 920px; min-height: 80px; height: auto; --base-height: 80px;" title="「大丈夫、策は無限にある」 デザイナー コシノジュンコが語る人生の特別講義">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">16:40 - 17:20</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">「大丈夫、策は無限にある」<br/>デザイナー  コシノジュンコが語る人生の特別講義</div>
+</div><div class="session-card climbers-card" style="top: 1000px; min-height: 80px; height: auto; --base-height: 80px;" title="AIは私たちを”希望の時代”に導くか？ ️データ×AIがもたらす、意思決定の進化">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">17:20 - 18:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AIは私たちを”希望の時代”に導くか？<br/>️データ×AIがもたらす、意思決定の進化</div>
+</div><div class="session-card climbers-card" style="top: 1100px; min-height: 80px; height: auto; --base-height: 80px;" title="ドイツから来日決定 岡崎慎司の人生の特別講義">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">18:10 - 18:50</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">ドイツから来日決定<br/>岡崎慎司の人生の特別講義</div>
+</div><div class="session-card climbers-card" style="top: 1180px; min-height: 80px; height: auto; --base-height: 80px;" title="「勝てる場所を、自分で選び直す。」 〜“一発屋”から子どもたちのヒーローへ。あなたに届けたい再起の教科書〜">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">18:50 - 19:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">「勝てる場所を、自分で選び直す。」<br/>〜“一発屋”から子どもたちのヒーローへ。あなたに届けたい再起の教科書〜</div>
+</div><div class="session-card climbers-card" style="top: 1260px; min-height: 80px; height: auto; --base-height: 80px;" title="片山さつきヒストリー 混迷の時代を生き抜くヒント">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">19:30 - 20:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">片山さつきヒストリー<br/>混迷の時代を生き抜くヒント</div>
+</div><div class="session-card climbers-card cl-short" style="top: 1340px; min-height: 20px; height: auto; --base-height: 20px;" title="DAY1 クロージング">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">20:10 - 20:20</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">DAY1 クロージング</div>
+</div></div>
+</div>
+</div>
+</div>
+<div class="tab-content hidden relative" id="day2">
+<div class="time-col flex-shrink-0 bg-white/95 backdrop-blur border-r border-slate-200">
+<div class="stage-header border-b border-slate-200"></div>
+<div class="h-[1200px] relative timeline-grid border-r border-slate-200/50">
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 0px;">9:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 120px;">10:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 240px;">11:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 360px;">12:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 480px;">13:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 600px;">14:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 720px;">15:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 840px;">16:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 960px;">17:00</div>
+<div class="absolute left-0 w-full text-center text-xs font-bold text-slate-500 transform -translate-y-1/2" style="top: 1080px;">18:00</div>
+</div>
+</div>
+<div class="flex-1 flex relative bg-slate-50/20">
+<div class="absolute inset-0 pointer-events-none timeline-grid z-0"></div>
+<div class="absolute left-0 right-0 bg-slate-100/45 pointer-events-none z-0 flex items-center justify-center border-y border-slate-200/60" style="top: 360px; height: 120px;">
+<span class="text-sm font-bold text-slate-400 tracking-widest opacity-50">LUNCH / EXHIBITION / NETWORKING</span>
+</div>
+<div class="absolute left-0 right-0 bg-slate-100/30 pointer-events-none z-0 flex items-center justify-center border-y border-slate-200/60" style="top: 840px; height: 120px;">
+<span class="text-sm font-bold text-slate-400 tracking-widest opacity-50">体験ゾーン・AI デモ・法改正相談ブース</span>
+</div>
+<div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-rose-600 text-lg leading-none">ステージA</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">CHRO AGENDA</p>
+</div>
+<div class="h-[1200px] relative z-10"><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 60px; min-height: 80px; height: auto; --base-height: 80px;" title="CEOを支え、時にはNOを突きつける。変革を完遂させる『人事の規律』">
+<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">9:30 - 10:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">CEOを支え、時にはNOを突きつける。変革を完遂させる『人事の規律』</div>
+</div><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 240px; min-height: 80px; height: auto; --base-height: 80px;" title="AIは導入した。でも現場が動かない。－AI活用を定着させる“学び続ける組織”のつくり方－">
+<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">11:00 - 11:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AIは導入した。でも現場が動かない。－AI活用を定着させる“学び続ける組織”のつくり方－</div>
+</div><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 420px; min-height: 80px; height: auto; --base-height: 80px;" title="自信を育む「学び直し」のリアル - 変化の時代に、女性に贈る処方箋（仮）">
+<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">12:30 - 13:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">自信を育む「学び直し」のリアル - 変化の時代に、女性に贈る処方箋（仮）</div>
+</div><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 600px; min-height: 80px; height: auto; --base-height: 80px;" title="真の人的資本経営：「開示」の先にある「企業価値」への変換（仮）">
+<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">14:00 - 14:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">真の人的資本経営：「開示」の先にある「企業価値」への変換（仮）</div>
+</div><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 780px; min-height: 80px; height: auto; --base-height: 80px;" title="組織の『重力』を脱し、個の『覚悟』を駆動する。仕組みを超えて、人が動くカルチャーの設計図（仮）">
+<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">15:30 - 16:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">組織の『重力』を脱し、個の『覚悟』を駆動する。仕組みを超えて、人が動くカルチャーの設計図（仮）</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-sky-600 text-lg leading-none">ステージB</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">NewsPicks HR ステージ</p>
+</div>
+<div class="h-[1200px] relative z-10"><div class="session-card bg-sky-50 border-sky-200 text-sky-900" style="top: 160px; min-height: 80px; height: auto; --base-height: 80px;" title="従業員エンゲージメントを爆上げするための人事制度設計と「KPIの定め方」（仮）">
+<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">10:20 - 11:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">従業員エンゲージメントを爆上げするための人事制度設計と「KPIの定め方」（仮）</div>
+</div><div class="session-card bg-sky-50 border-sky-200 text-sky-900" style="top: 340px; min-height: 80px; height: auto; --base-height: 80px;" title="AI時代に人事こそが「読書」をすべき理由（仮）">
+<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">11:50 - 12:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AI時代に人事こそが「読書」をすべき理由（仮）</div>
+</div><div class="session-card bg-sky-50 border-sky-200 text-sky-900" style="top: 520px; min-height: 80px; height: auto; --base-height: 80px;" title="組織が機能するための「相互感謝」の作り方（仮）">
+<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">13:20 - 14:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">組織が機能するための「相互感謝」の作り方（仮）</div>
+</div><div class="session-card bg-sky-50 border-sky-200 text-sky-900" style="top: 700px; min-height: 80px; height: auto; --base-height: 80px;" title="結局リモートとハイブリットとフル出社どれがいいの？オフィス環境と働き方の最適解（仮）">
+<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">14:50 - 15:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">結局リモートとハイブリットとフル出社どれがいいの？オフィス環境と働き方の最適解（仮）</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-emerald-600 text-lg leading-none">ステージC</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">人材不足を乗り越える Lab<br/>Powered by HiPro</p>
+</div>
+<div class="h-[1200px] relative z-10"><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 160px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">10:20 - 11:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 320px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">11:40 - 12:20</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 480px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">13:00 - 13:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 640px; min-height: 80px; height: auto; --base-height: 80px;" title="人材不足を突破する、AI×データ人材戦略">
+<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">14:20 - 15:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">人材不足を突破する、AI×データ人材戦略</div>
+</div><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 800px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">15:40 - 16:20</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-indigo-600 text-lg leading-none">ステージD</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">AI活用ワークショップ</p>
+</div>
+<div class="h-[1200px] relative z-10"><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 240px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">11:00 - 11:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 420px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">12:30 - 13:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 600px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">14:00 - 14:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 780px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">15:30 - 16:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-fuchsia-600 text-lg leading-none">ステージE</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR 情報交換会</p>
+</div>
+<div class="h-[1200px] relative z-10"><div class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900" style="top: 240px; min-height: 80px; height: auto; --base-height: 80px;" title="AIを活用した人材開発の内製化を考える 情報交換会（仮）">
+<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">11:00 - 11:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">AIを活用した人材開発の内製化を考える　情報交換会（仮）</div>
+</div><div class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900" style="top: 420px; min-height: 80px; height: auto; --base-height: 80px;" title="採用におけるAI活用 情報交換会 （仮）">
+<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">12:30 - 13:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">採用におけるAI活用　情報交換会　（仮）</div>
+</div><div class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900" style="top: 600px; min-height: 80px; height: auto; --base-height: 80px;" title="タレントマネジメントを活用した社員の自律的なキャリア開発を考える 情報交換会（仮）">
+<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">14:00 - 14:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">タレントマネジメントを活用した社員の自律的なキャリア開発を考える 情報交換会（仮）</div>
+</div><div class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900" style="top: 780px; min-height: 80px; height: auto; --base-height: 80px;" title="ミドル/シニア社員のAIリスキリング事例 情報交換会（仮）">
+<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">15:30 - 16:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">ミドル/シニア社員のAIリスキリング事例　情報交換会（仮）</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-purple-600 text-lg leading-none">ステージF</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR Solution Academy</p>
+</div>
+<div class="h-[1200px] relative z-10"><div class="session-card bg-purple-50 border-purple-200 text-purple-900" style="top: 240px; min-height: 120px; height: auto; --base-height: 120px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">11:00 - 12:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-purple-50 border-purple-200 text-purple-900" style="top: 420px; min-height: 120px; height: auto; --base-height: 120px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">12:30 - 13:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-purple-50 border-purple-200 text-purple-900" style="top: 600px; min-height: 120px; height: auto; --base-height: 120px;" title="Employee Success実現のための社内コーチング＆キャリアカウンセリング戦略">
+<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">14:00 - 15:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Employee Success実現のための社内コーチング＆キャリアカウンセリング戦略</div>
+</div><div class="session-card bg-purple-50 border-purple-200 text-purple-900" style="top: 780px; min-height: 120px; height: auto; --base-height: 120px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">15:30 - 16:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div></div>
+</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
+<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
+<h3 class="font-black text-amber-600 text-lg leading-none">ステージG</h3>
+<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR Solution Academy</p>
+</div>
+<div class="h-[1200px] relative z-10"><div class="session-card bg-amber-50 border-amber-200 text-amber-900" style="top: 240px; min-height: 120px; height: auto; --base-height: 120px;" title="働きがいと高業績を両立するマネジメント手法（仮）">
+<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">11:00 - 12:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">働きがいと高業績を両立するマネジメント手法（仮）</div>
+</div><div class="session-card bg-amber-50 border-amber-200 text-amber-900" style="top: 420px; min-height: 120px; height: auto; --base-height: 120px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">12:30 - 13:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-amber-50 border-amber-200 text-amber-900" style="top: 600px; min-height: 120px; height: auto; --base-height: 120px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">14:00 - 15:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card bg-amber-50 border-amber-200 text-amber-900" style="top: 780px; min-height: 120px; height: auto; --base-height: 120px;" title="Coming Soon">
+<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">15:30 - 16:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div></div>
+</div><div class="climbers-track relative group">
+<div class="stage-header climbers-stage-header border-b border-orange-200 flex flex-col items-center justify-center px-3 text-center">
+<h3 class="font-black text-white text-lg leading-none">Climbers X LIVE</h3>
+<p class="text-[9px] text-orange-100 mt-2 font-black text-center leading-tight tracking-wide">乗り越える。日本最大級の変革者カンファレンス</p>
+</div>
+<div class="h-[1200px] relative z-10"><div class="session-card climbers-card cl-short" style="top: 360px; min-height: 20px; height: auto; --base-height: 20px;" title="DAY2 オープニング">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">12:00 - 12:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">DAY2 オープニング</div>
+</div><div class="session-card climbers-card" style="top: 380px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">12:10 - 12:50</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card climbers-card" style="top: 460px; min-height: 80px; height: auto; --base-height: 80px;" title="世界と戦い続ける日本の司令塔 壁を突破し続けるための「武器の磨き方」">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">12:50 - 13:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">世界と戦い続ける日本の司令塔<br/>壁を突破し続けるための「武器の磨き方」</div>
+</div><div class="session-card climbers-card cl-short" style="top: 540px; min-height: 40px; height: auto; --base-height: 40px;" title="Coming Soon">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">13:30 - 13:50</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card climbers-card cl-short" style="top: 580px; min-height: 40px; height: auto; --base-height: 40px;" title="Coming Soon">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">13:50 - 14:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card climbers-card" style="top: 660px; min-height: 80px; height: auto; --base-height: 80px;" title="叛逆のカリスマ 魔裟斗の人生の特別講義">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">14:30 - 15:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">叛逆のカリスマ<br/>魔裟斗の人生の特別講義</div>
+</div><div class="session-card climbers-card cl-short" style="top: 740px; min-height: 40px; height: auto; --base-height: 40px;" title="「4回戦ボーイの『敗者復活戦』」 アスリート出身“だから”証明できる、逃げない経営論">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">15:10 - 15:30</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">「4回戦ボーイの『敗者復活戦』」<br/>アスリート出身“だから”証明できる、逃げない経営論</div>
+</div><div class="session-card climbers-card cl-short" style="top: 780px; min-height: 40px; height: auto; --base-height: 40px;" title="「愛は与えっぱなし」 〜何度裏切られても人を信じ抜く、常識破りのマネジメント〜">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">15:30 - 15:50</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">「愛は与えっぱなし」<br/>〜何度裏切られても人を信じ抜く、常識破りのマネジメント〜</div>
+</div><div class="session-card climbers-card cl-short" style="top: 820px; min-height: 40px; height: auto; --base-height: 40px;" title="「失ったものではなく、残された可能性を見る」 日本のパラ陸上を創った義肢装具士の伴走論">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">15:50 - 16:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">「失ったものではなく、残された可能性を見る」<br/>日本のパラ陸上を創った義肢装具士の伴走論</div>
+</div><div class="session-card climbers-card" style="top: 900px; min-height: 80px; height: auto; --base-height: 80px;" title="進化を止めない女優 橋本環奈の人生の特別講義">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">16:30 - 17:10</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">進化を止めない女優<br/>橋本環奈の人生の特別講義</div>
+</div><div class="session-card climbers-card" style="top: 980px; min-height: 60px; height: auto; --base-height: 60px;" title="Coming Soon">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">17:10 - 17:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
+</div><div class="session-card climbers-card cl-short" style="top: 1040px; min-height: 40px; height: auto; --base-height: 40px;" title="「キャリアは逆算しない。15歳のココイチアルバイトから22歳の社長へ」 〜Z世代社長の”巻き込み”術〜">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">17:40 - 18:00</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">「キャリアは逆算しない。15歳のココイチアルバイトから22歳の社長へ」<br/>〜Z世代社長の”巻き込み”術〜</div>
+</div><div class="session-card climbers-card" style="top: 1080px; min-height: 80px; height: auto; --base-height: 80px;" title="「郷ひろみ」の誕生と輝き続ける理由 最高の準備で作り出す 最高の瞬間">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">18:00 - 18:40</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">「郷ひろみ」の誕生と輝き続ける理由<br/>最高の準備で作り出す 最高の瞬間</div>
+</div><div class="session-card climbers-card cl-short" style="top: 1160px; min-height: 20px; height: auto; --base-height: 20px;" title="DAY2 クロージング">
+<div class="text-[10px] font-bold climbers-time mb-1 leading-none">18:40 - 18:50</div>
+<div class="text-[11px] font-bold session-content leading-tight mb-1.5">DAY2 クロージング</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<script>
+function switchTab(tabId) {
+  document.querySelectorAll('.tab-content').forEach(el => { el.classList.add('hidden'); el.classList.remove('flex'); });
+  document.querySelectorAll('.tab-btn').forEach(el => {
+    el.classList.remove('border-teal-500','text-teal-600');
+    el.classList.add('border-transparent','text-gray-400');
+    const span = el.querySelector('span'); if(span) span.classList.remove('text-teal-600/80');
+  });
+  document.getElementById(tabId).classList.remove('hidden');
+  document.getElementById(tabId).classList.add('flex');
+  const selectedTab = document.getElementById('tab-' + tabId);
+  selectedTab.classList.remove('border-transparent','text-gray-400');
+  selectedTab.classList.add('border-teal-500','text-teal-600');
+  const selectedSpan = selectedTab.querySelector('span'); if(selectedSpan) selectedSpan.classList.add('text-teal-600/80');
+}
+</script>
+</body>
+</html>
