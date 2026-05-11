@@ -30,6 +30,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 .climbers-card.cl-short .session-content { display: block; flex: 1 1 auto; min-width: 0; margin: 0 !important; font-size: 9.2px; line-height: 1.1; white-space: normal; overflow: visible; text-overflow: clip; }
 .climbers-card .session-content { display: block; -webkit-line-clamp: unset; -webkit-box-orient: initial; white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.25; }
 .climbers-card:not(.cl-short) .climbers-time { margin-bottom: 4px !important; }
+
+.stage-kicker { margin: 5px 0 0; color: #64748b; font-size: 9px; line-height: 1; font-weight: 900; letter-spacing: .04em; text-align: center; }
+.stage-title { margin: 0; font-size: 13px; line-height: 1.14; font-weight: 900; text-align: center; }
+.stage-title-mid { font-size: 12px; line-height: 1.14; }
+.stage-title-long { font-size: 10.8px; line-height: 1.16; }
 </style>
 </head>
 <body class="antialiased pb-20">
@@ -76,8 +81,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div>
 <div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-rose-600 text-lg leading-none">ステージA</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">CHRO AGENDA</p>
+<h3 class="stage-title text-rose-600">CHRO AGENDA</h3>
+<p class="stage-kicker">ステージA</p>
 </div>
 <div class="h-[1380px] relative z-10"><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 60px; min-height: 80px; height: auto; --base-height: 80px;" title="組織の境界を越える人材戦略。CHROが拓く人的資本経営の次の一手">
 <div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">9:30 - 10:10</div>
@@ -97,8 +102,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div></div>
 </div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-sky-600 text-lg leading-none">ステージB</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">NewsPicks HR ステージ</p>
+<h3 class="stage-title stage-title-mid text-sky-600">NewsPicks HR Stage</h3>
+<p class="stage-kicker">ステージB</p>
 </div>
 <div class="h-[1380px] relative z-10"><div class="session-card bg-sky-50 border-sky-200 text-sky-900" style="top: 160px; min-height: 80px; height: auto; --base-height: 80px;" title="カルチャーの「醸成」は誰の仕事か。HRBPが仕掛ける、組織文化の設計図（仮）">
 <div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">10:20 - 11:00</div>
@@ -115,8 +120,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div></div>
 </div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-emerald-600 text-lg leading-none">ステージC</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">人材不足を乗り越える Lab<br/>Powered by HiPro</p>
+<h3 class="stage-title stage-title-long text-emerald-600">部門主導の人材不足解消 Lab<br/>Powered by HiPro</h3>
+<p class="stage-kicker">ステージC</p>
 </div>
 <div class="h-[1380px] relative z-10"><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 160px; min-height: 80px; height: auto; --base-height: 80px;" title="DXを前進させるIT組織はどう人材を組み合わせているのか？〜採用依存から脱する組織設計論〜">
 <div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">10:20 - 11:00</div>
@@ -136,26 +141,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div></div>
 </div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-indigo-600 text-lg leading-none">ステージD</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">AI活用ワークショップ</p>
-</div>
-<div class="h-[1380px] relative z-10"><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 240px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
-<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">11:00 - 11:40</div>
-<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
-</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 420px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
-<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">12:30 - 13:10</div>
-<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
-</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 600px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
-<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">14:00 - 14:40</div>
-<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
-</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 780px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
-<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">15:30 - 16:10</div>
-<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
-</div></div>
-</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
-<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-fuchsia-600 text-lg leading-none">ステージE</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR 情報交換会</p>
+<h3 class="stage-title text-fuchsia-600">HR 情報交換会</h3>
+<p class="stage-kicker">ステージE</p>
 </div>
 <div class="h-[1380px] relative z-10"><div class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900" style="top: 240px; min-height: 80px; height: auto; --base-height: 80px;" title="ジョブ型人事制度の未来を考える情報交換会（仮）">
 <div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">11:00 - 11:40</div>
@@ -172,8 +159,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div></div>
 </div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-purple-600 text-lg leading-none">ステージF</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR Solution Academy</p>
+<h3 class="stage-title stage-title-mid text-purple-600">HR Solution Academy</h3>
+<p class="stage-kicker">ステージF</p>
 </div>
 <div class="h-[1380px] relative z-10"><div class="session-card bg-purple-50 border-purple-200 text-purple-900" style="top: 240px; min-height: 120px; height: auto; --base-height: 120px;" title="AI時代に求められる「感情マネジメント力」">
 <div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">11:00 - 12:00</div>
@@ -190,8 +177,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div></div>
 </div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-amber-600 text-lg leading-none">ステージG</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR Solution Academy</p>
+<h3 class="stage-title stage-title-mid text-amber-600">HR Solution Academy</h3>
+<p class="stage-kicker">ステージG</p>
 </div>
 <div class="h-[1380px] relative z-10"><div class="session-card bg-amber-50 border-amber-200 text-amber-900" style="top: 240px; min-height: 120px; height: auto; --base-height: 120px;" title="AI時代のマネジメント進化論 〜罰ゲーム化を乗り越える管理職の再設計〜（仮）">
 <div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">11:00 - 12:00</div>
@@ -280,8 +267,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div>
 <div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-rose-600 text-lg leading-none">ステージA</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">CHRO AGENDA</p>
+<h3 class="stage-title text-rose-600">CHRO AGENDA</h3>
+<p class="stage-kicker">ステージA</p>
 </div>
 <div class="h-[1200px] relative z-10"><div class="session-card bg-rose-50 border-rose-200 text-rose-900" style="top: 60px; min-height: 80px; height: auto; --base-height: 80px;" title="CEOを支え、時にはNOを突きつける。変革を完遂させる『人事の規律』">
 <div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">9:30 - 10:10</div>
@@ -301,8 +288,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div></div>
 </div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-sky-600 text-lg leading-none">ステージB</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">NewsPicks HR ステージ</p>
+<h3 class="stage-title stage-title-mid text-sky-600">NewsPicks HR Stage</h3>
+<p class="stage-kicker">ステージB</p>
 </div>
 <div class="h-[1200px] relative z-10"><div class="session-card bg-sky-50 border-sky-200 text-sky-900" style="top: 160px; min-height: 80px; height: auto; --base-height: 80px;" title="従業員エンゲージメントを爆上げするための人事制度設計と「KPIの定め方」（仮）">
 <div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">10:20 - 11:00</div>
@@ -319,8 +306,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div></div>
 </div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-emerald-600 text-lg leading-none">ステージC</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">人材不足を乗り越える Lab<br/>Powered by HiPro</p>
+<h3 class="stage-title stage-title-mid text-emerald-600">AI × HR Innovation Lab</h3>
+<p class="stage-kicker">ステージC</p>
 </div>
 <div class="h-[1200px] relative z-10"><div class="session-card bg-emerald-50 border-emerald-200 text-emerald-900" style="top: 160px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
 <div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">10:20 - 11:00</div>
@@ -340,26 +327,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div></div>
 </div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-indigo-600 text-lg leading-none">ステージD</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">AI活用ワークショップ</p>
-</div>
-<div class="h-[1200px] relative z-10"><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 240px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
-<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">11:00 - 11:40</div>
-<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
-</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 420px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
-<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">12:30 - 13:10</div>
-<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
-</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 600px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
-<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">14:00 - 14:40</div>
-<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
-</div><div class="session-card bg-indigo-50 border-indigo-200 text-indigo-900" style="top: 780px; min-height: 80px; height: auto; --base-height: 80px;" title="Coming Soon">
-<div class="text-[10px] font-bold text-indigo-600 mb-1 leading-none">15:30 - 16:10</div>
-<div class="text-[11px] font-bold session-content leading-tight mb-1.5">Coming Soon</div>
-</div></div>
-</div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
-<div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-fuchsia-600 text-lg leading-none">ステージE</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR 情報交換会</p>
+<h3 class="stage-title text-fuchsia-600">HR 情報交換会</h3>
+<p class="stage-kicker">ステージE</p>
 </div>
 <div class="h-[1200px] relative z-10"><div class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900" style="top: 240px; min-height: 80px; height: auto; --base-height: 80px;" title="AIを活用した人材開発の内製化を考える 情報交換会（仮）">
 <div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">11:00 - 11:40</div>
@@ -376,8 +345,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div></div>
 </div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-purple-600 text-lg leading-none">ステージF</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR Solution Academy</p>
+<h3 class="stage-title stage-title-mid text-purple-600">HR Solution Academy</h3>
+<p class="stage-kicker">ステージF</p>
 </div>
 <div class="h-[1200px] relative z-10"><div class="session-card bg-purple-50 border-purple-200 text-purple-900" style="top: 240px; min-height: 120px; height: auto; --base-height: 120px;" title="Coming Soon">
 <div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">11:00 - 12:00</div>
@@ -394,8 +363,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </div></div>
 </div><div class="flex-1 min-w-[176px] border-r border-slate-200/60 relative group">
 <div class="stage-header bg-white/95 backdrop-blur border-b border-slate-200 flex flex-col items-center justify-center px-2">
-<h3 class="font-black text-amber-600 text-lg leading-none">ステージG</h3>
-<p class="text-[9px] text-slate-500 mt-1 font-bold text-center leading-tight">HR Solution Academy</p>
+<h3 class="stage-title stage-title-mid text-amber-600">HR Solution Academy</h3>
+<p class="stage-kicker">ステージG</p>
 </div>
 <div class="h-[1200px] relative z-10"><div class="session-card bg-amber-50 border-amber-200 text-amber-900" style="top: 240px; min-height: 120px; height: auto; --base-height: 120px;" title="働きがいと高業績を両立するマネジメント手法（仮）">
 <div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">11:00 - 12:00</div>
