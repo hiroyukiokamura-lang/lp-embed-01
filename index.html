@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>BEYOND FORUM 2026 | TIMETABLE</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
 <script>
 tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 'sans-serif'] }, colors: { beyond: { bg: '#f8fafc', primary: '#0ea5e9', secondary: '#14b8a6' } } } } }
 </script>
@@ -33,6 +34,8 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 .climbers-title { font-size: 12.4px; line-height: 1.34; font-weight: 900; color: #431407; }
 .speaker-lines { margin-top: 8px; padding-top: 7px; border-top: 1px solid rgba(251,146,60,.28); color: #7c2d12; font-size: 10.7px; line-height: 1.35; font-weight: 800; }
 .speaker-lines span { color: #9a3412; font-weight: 700; }
+.beyond-speakers { border-top: 1px solid rgba(15,23,42,.12); color: inherit; font-size: 10.3px; line-height: 1.35; font-weight: 800; }
+.beyond-speakers span { color: inherit; opacity: .74; font-weight: 700; }
 .stage-kicker { margin: 5px 0 0; color: #64748b; font-size: 9px; line-height: 1; font-weight: 900; letter-spacing: .04em; text-align: center; }
 .stage-title { margin: 0; font-size: 13px; line-height: 1.14; font-weight: 900; text-align: center; }
 .stage-title-mid { font-size: 12px; line-height: 1.14; }
@@ -46,7 +49,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </head>
 <body class="antialiased pb-20">
 <header class="bg-gradient-custom py-12 px-4 shadow-sm border-b border-gray-100 relative overflow-hidden">
-<div class="absolute top-0 right-0 opacity-40"><svg height="400" viewBox="0 0 200 200" width="400" xmlns="http://www.w3.org/2000/svg"><path d="M45.7,-76.4C58.9,-69.3,69.2,-55.4,78.2,-41.2C87.2,-27,94.9,-13.5,93.6,-0.8C92.2,12,81.8,23.9,72.6,36.5C63.4,49.1,55.3,62.3,43.2,71.1C31.2,79.9,15.6,84.3,0.7,83.1C-14.3,81.9,-28.5,75.1,-41.1,66.6C-53.7,58,-64.7,47.7,-72.1,35.1C-79.5,22.5,-83.4,7.6,-82.1,-6.6C-80.8,-20.9,-74.4,-34.5,-64.8,-45.3C-55.2,-56,-42.5,-63.9,-29.3,-70.7C-16.1,-77.6,-8.1,-83.4,3.2,-88.7C14.4,-93.9,28.9,-98.6,45.7,-76.4Z" fill="#ffffff" transform="translate(100 100)"></path></svg></div>
+<div class="absolute top-0 right-0 opacity-40"><svg height="400" viewbox="0 0 200 200" width="400" xmlns="http://www.w3.org/2000/svg"><path d="M45.7,-76.4C58.9,-69.3,69.2,-55.4,78.2,-41.2C87.2,-27,94.9,-13.5,93.6,-0.8C92.2,12,81.8,23.9,72.6,36.5C63.4,49.1,55.3,62.3,43.2,71.1C31.2,79.9,15.6,84.3,0.7,83.1C-14.3,81.9,-28.5,75.1,-41.1,66.6C-53.7,58,-64.7,47.7,-72.1,35.1C-79.5,22.5,-83.4,7.6,-82.1,-6.6C-80.8,-20.9,-74.4,-34.5,-64.8,-45.3C-55.2,-56,-42.5,-63.9,-29.3,-70.7C-16.1,-77.6,-8.1,-83.4,3.2,-88.7C14.4,-93.9,28.9,-98.6,45.7,-76.4Z" fill="#ffffff" transform="translate(100 100)"></path></svg></div>
 <div class="max-w-6xl mx-auto relative z-10 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
 <div><h2 class="text-sm md:text-base font-bold tracking-widest text-teal-600 mb-2">人財の可能性を武器にする</h2><h1 class="text-4xl md:text-5xl font-black tracking-tight mb-4 text-slate-800">BEYOND FORUM <span class="text-gradient">2026</span></h1><p class="text-slate-600 font-medium">同時開催：Climbers 2026 ー乗り越える。日本最大級のビジネスカンファレンスー</p></div>
 <div class="mt-6 md:mt-0 text-right text-slate-700"><p class="text-xl font-bold">2026年6月9日(火) - 10日(水)</p><p class="text-sm text-slate-500 mt-1">@東京ビッグサイト 南1,2ホール</p></div>
@@ -60,7 +63,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="text-sm text-slate-500 text-right mb-4">※横にスクロールして全体をご覧いただけます。枠にマウスを乗せると詳細が表示されます。</p>
 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-x-auto relative">
 <div class="timetable-wrapper">
-<div class="tab-content flex  relative" id="day1">
+<div class="tab-content flex relative" id="day1">
 <div class="time-col flex-shrink-0 bg-white/95 backdrop-blur border-r border-slate-200">
 <div class="stage-header border-b border-slate-200"></div>
 <div class="relative timeline-grid border-r border-slate-200/50" style="height:5040px;">
@@ -87,26 +90,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージA</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:5040px;">
-<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:210px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">9:30 - 10:10</div>
-<div class="session-content leading-tight">組織の境界を越える人材戦略。CHROが拓く人的資本経営の次の一手</div>
-</article>
-<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:840px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">11:00 - 11:40</div>
-<div class="session-content leading-tight">AI時代、組織の”学び”はアップデートされたか？個人と企業の成長を両立させる人財戦略（仮）</div>
-</article>
-<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:1470px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">12:30 - 13:10</div>
-<div class="session-content leading-tight">“愛される企業”への変革。組織のプライドを取り戻す経営</div>
-</article>
-<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:2100px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">14:00 - 14:40</div>
-<div class="session-content leading-tight">"個"の充足を"組織"の熱量へ変える、ウェルビーイング経営の本質（仮）</div>
-</article>
-<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:2730px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">15:30 - 16:10</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
+<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:210px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">9:30 - 10:10</div><div class="session-content leading-tight">組織の境界を越える人材戦略。CHROが拓く人的資本経営の次の一手</div><div class="speaker-lines beyond-speakers">花田 琢也<span>｜日揮ホールディングス株式会社専務執行役員 CHRO</span><br/>唐澤 俊輔<span>｜Almoha ／ Startup Culture Lab.共同創業者COO ／所長</span></div></article>
+<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:840px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">11:00 - 11:40</div><div class="session-content leading-tight">AI時代、組織の”学び”はアップデートされたか？個人と企業の成長を両立させる人財戦略（仮）</div></article>
+<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:1470px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">12:30 - 13:10</div><div class="session-content leading-tight">“愛される企業”への変革。組織のプライドを取り戻す経営</div><div class="speaker-lines beyond-speakers">ハロルド・ジョージ・メイ<span>｜アース製薬・キユーピー社外取締役、パナソニック顧問元タカラトミー社長、現アース製薬・キユーピー社外取締役、パナソニック顧問</span></div></article>
+<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:2100px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">14:00 - 14:40</div><div class="session-content leading-tight">"個"の充足を"組織"の熱量へ変える、ウェルビーイング経営の本質（仮）</div><div class="speaker-lines beyond-speakers">リュウ シーチャウ<span>｜株式会社サニーサイドアップ代表取締役社長</span><br/>岡田 悠希<span>｜株式会社ポーラHR本部 本部長</span></div></article>
+<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:2730px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">15:30 - 16:10</div><div class="session-content leading-tight">Coming Soon</div><div class="speaker-lines beyond-speakers">原田 信也<span>｜株式会社丸井グループ人事部長</span><br/>室住 篤子<span>｜株式会社NTTドコモ総務人事部 キャリアデザイン室 室長</span><br/>石田 茂<span>｜ポラス株式会社 人事部長ポラテック株式会社 監査役</span></div></article>
 </div>
 </div>
 <div class="flex-1 min-w-[210px] border-r border-slate-200/60 relative group">
@@ -115,22 +103,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージB</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:5040px;">
-<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:560px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">10:20 - 11:00</div>
-<div class="session-content leading-tight">カルチャーの「醸成」は誰の仕事か。HRBPが仕掛ける、組織文化の設計図（仮）</div>
-</article>
-<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:1190px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">11:50 - 12:30</div>
-<div class="session-content leading-tight">AIが採用を変える時代に、人事が問い直すべきは「ツール」より「人材観」だ（仮）</div>
-</article>
-<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:1820px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">13:20 - 14:00</div>
-<div class="session-content leading-tight">バーンアウトは「突然」じゃない。見逃され続けるサインと、人事が仕掛ける予防設計（仮）</div>
-</article>
-<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:2450px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">14:50 - 15:30</div>
-<div class="session-content leading-tight">AI時代の組織未来予想図（仮）</div>
-</article>
+<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:560px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">10:20 - 11:00</div><div class="session-content leading-tight">カルチャーの「醸成」は誰の仕事か。HRBPが仕掛ける、組織文化の設計図（仮）</div><div class="speaker-lines beyond-speakers">山中 裕貴<span>｜一般社団法人 日本HRBP協会代表理事</span></div></article>
+<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:1190px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">11:50 - 12:30</div><div class="session-content leading-tight">AIが採用を変える時代に、人事が問い直すべきは「ツール」より「人材観」だ（仮）</div><div class="speaker-lines beyond-speakers">菅原 啓太<span>｜株式会社ディー・エヌ・エーヒューマンリソース本部 本部長</span></div></article>
+<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:1820px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">13:20 - 14:00</div><div class="session-content leading-tight">バーンアウトは「突然」じゃない。見逃され続けるサインと、人事が仕掛ける予防設計（仮）</div><div class="speaker-lines beyond-speakers">大室 正志<span>｜大室産業医事務所代表</span><br/>櫻本 真理<span>｜株式会社コーチェット代表取締役</span></div></article>
+<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:2450px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">14:50 - 15:30</div><div class="session-content leading-tight">AI時代の組織未来予想図（仮）</div><div class="speaker-lines beyond-speakers">白木 俊行<span>｜株式会社リンクアンドモチベーション特任執行役員</span></div></article>
 </div>
 </div>
 <div class="flex-1 min-w-[210px] border-r border-slate-200/60 relative group">
@@ -139,26 +115,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージC</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:5040px;">
-<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:560px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">10:20 - 11:00</div>
-<div class="session-content leading-tight">DXを前進させるIT組織はどう人材を組み合わせているのか？〜採用依存から脱する組織設計論〜</div>
-</article>
-<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:1120px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">11:40 - 12:20</div>
-<div class="session-content leading-tight">AI時代のIT部門は、何を内製し何を外部化すべきか〜IT部門に求められる人材戦略の再設計〜</div>
-</article>
-<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:1680px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">13:00 - 13:40</div>
-<div class="session-content leading-tight">新規事業は“社内の延長線”では立ち上がらない〜成功確率を高める外部知の取り込み方〜</div>
-</article>
-<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:2240px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">14:20 - 15:00</div>
-<div class="session-content leading-tight">採用依存から脱する人的資本経営へ〜人事が再設計する“社内人材×外部人材×AI”の最適ポートフォリオ〜</div>
-</article>
-<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:2800px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">15:40 - 16:20</div>
-<div class="session-content leading-tight">データ人材を抱えなくても、AI実装は進められるのか〜事業成果につなげる現実的アプローチ〜</div>
-</article>
+<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:560px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">10:20 - 11:00</div><div class="session-content leading-tight">DXを前進させるIT組織はどう人材を組み合わせているのか？〜採用依存から脱する組織設計論〜</div></article>
+<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:1120px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">11:40 - 12:20</div><div class="session-content leading-tight">AI時代のIT部門は、何を内製し何を外部化すべきか〜IT部門に求められる人材戦略の再設計〜</div><div class="speaker-lines beyond-speakers">岡田 将幸<span>｜パーソルホールディングス株式会社グループAI本部／グループWorkStyle本部 本部長</span></div></article>
+<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:1680px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">13:00 - 13:40</div><div class="session-content leading-tight">新規事業は“社内の延長線”では立ち上がらない〜成功確率を高める外部知の取り込み方〜</div></article>
+<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:2240px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">14:20 - 15:00</div><div class="session-content leading-tight">採用依存から脱する人的資本経営へ〜人事が再設計する“社内人材×外部人材×AI”の最適ポートフォリオ〜</div></article>
+<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:2800px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">15:40 - 16:20</div><div class="session-content leading-tight">データ人材を抱えなくても、AI実装は進められるのか〜事業成果につなげる現実的アプローチ〜</div></article>
 </div>
 </div>
 <div class="flex-1 min-w-[210px] border-r border-slate-200/60 relative group">
@@ -167,22 +128,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージE</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:5040px;">
-<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:840px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">11:00 - 11:40</div>
-<div class="session-content leading-tight">ジョブ型人事制度の未来を考える情報交換会（仮）</div>
-</article>
-<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:1470px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">12:30 - 13:10</div>
-<div class="session-content leading-tight">次世代経営者のサクセッションプラン事例 情報交換会（仮）</div>
-</article>
-<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:2100px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">14:00 - 14:40</div>
-<div class="session-content leading-tight">AI活用時代におけるパフォーマンス評価のあり方を考える 情報交換会（仮）</div>
-</article>
-<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:2730px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">15:30 - 16:10</div>
-<div class="session-content leading-tight">AIを活用した新入社員オンボーディングプラン　情報交換会（仮）</div>
-</article>
+<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:840px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">11:00 - 11:40</div><div class="session-content leading-tight">ジョブ型人事制度の未来を考える情報交換会（仮）</div></article>
+<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:1470px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">12:30 - 13:10</div><div class="session-content leading-tight">次世代経営者のサクセッションプラン事例 情報交換会（仮）</div></article>
+<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:2100px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">14:00 - 14:40</div><div class="session-content leading-tight">AI活用時代におけるパフォーマンス評価のあり方を考える 情報交換会（仮）</div></article>
+<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:2730px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">15:30 - 16:10</div><div class="session-content leading-tight">AIを活用した新入社員オンボーディングプラン 情報交換会（仮）</div></article>
 </div>
 </div>
 <div class="flex-1 min-w-[210px] border-r border-slate-200/60 relative group">
@@ -191,22 +140,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージF</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:5040px;">
-<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:840px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">11:00 - 12:00</div>
-<div class="session-content leading-tight">AI時代に求められる「感情マネジメント力」</div>
-</article>
-<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:1470px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">12:30 - 13:30</div>
-<div class="session-content leading-tight">フィードバック経営 -「沈黙の組織」から「高め合う組織」へ（仮）</div>
-</article>
-<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2100px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">14:00 - 15:00</div>
-<div class="session-content leading-tight">「指示」を捨て、「生態系」を創る —— 変化を味方につける自己進化型組織のつくり方（仮）</div>
-</article>
-<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2730px;height:630px;--base-height:630px;">
-<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">15:30 - 17:00</div>
-<div class="session-content leading-tight">90分で経営を疑似体験する、事業開発人材の育成ワークショップ「T2D3」（仮）</div>
-</article>
+<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:840px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">11:00 - 12:00</div><div class="session-content leading-tight">AI時代に求められる「感情マネジメント力」</div><div class="speaker-lines beyond-speakers">松島 徹<span>｜６s.株式会社代表取締役一般社団法人日本アンガーマネジメント協会代表理事</span></div></article>
+<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:1470px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">12:30 - 13:30</div><div class="session-content leading-tight">フィードバック経営 -「沈黙の組織」から「高め合う組織」へ（仮）</div><div class="speaker-lines beyond-speakers">三村 真宗<span>｜株式会社U-ZERO代表取締役CEO兼CPO</span></div></article>
+<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2100px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">14:00 - 15:00</div><div class="session-content leading-tight">「指示」を捨て、「生態系」を創る —— 変化を味方につける自己進化型組織のつくり方（仮）</div></article>
+<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2730px;height:630px;--base-height:630px;"><div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">15:30 - 17:00</div><div class="session-content leading-tight">90分で経営を疑似体験する、事業開発人材の育成ワークショップ「T2D3」（仮）</div><div class="speaker-lines beyond-speakers">笹川 竜星<span>｜株式会社リブ・コンサルティングベンチャー事業部 シニアプロフェッショナル/T2D3事業責任者</span></div></article>
 </div>
 </div>
 <div class="flex-1 min-w-[210px] border-r border-slate-200/60 relative group">
@@ -215,22 +152,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージG</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:5040px;">
-<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:840px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">11:00 - 12:00</div>
-<div class="session-content leading-tight">AI時代のマネジメント進化論 〜罰ゲーム化を乗り越える管理職の再設計〜（仮）</div>
-</article>
-<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:1470px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">12:30 - 13:30</div>
-<div class="session-content leading-tight">人事部がない会社の最初の一手！経営と現場を結ぶ「人材育成設計」</div>
-</article>
-<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2100px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">14:00 - 15:00</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
-<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2730px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">15:30 - 16:30</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
+<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:840px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">11:00 - 12:00</div><div class="session-content leading-tight">AI時代のマネジメント進化論 〜罰ゲーム化を乗り越える管理職の再設計〜（仮）</div></article>
+<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:1470px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">12:30 - 13:30</div><div class="session-content leading-tight">人事部がない会社の最初の一手！経営と現場を結ぶ「人材育成設計」</div><div class="speaker-lines beyond-speakers">武田 真純<span>｜ＴＯＭＡコンサルタンツグループ株式会社ビジネスサポート部 人材・組織開発チーム チーフコンサルタント</span></div></article>
+<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2100px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">14:00 - 15:00</div><div class="session-content leading-tight">Coming Soon</div></article>
+<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2730px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">15:30 - 16:30</div><div class="session-content leading-tight">Coming Soon</div></article>
 </div>
 </div>
 <div class="climbers-track relative group">
@@ -242,73 +167,71 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <article class="session-card climbers-card" style="top:1540px;height:70px;--base-height:70px;">
 <div class="text-[10px] font-bold climbers-time leading-none">12:40 - 12:50</div>
 <div class="session-content climbers-title">DAY1 オープニング</div>
-
 </article>
 <article class="session-card climbers-card" style="top:1610px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">12:50 - 13:30</div>
-<div class="session-content climbers-title">思考の探求者<br>又吉直樹による人生の特別講義(仮)</div>
+<div class="session-content climbers-title">思考の探求者<br/>又吉直樹による人生の特別講義(仮)</div>
 <div class="speaker-lines">又吉 直樹<span>｜お笑い芸人／作家</span></div>
 </article>
 <article class="session-card climbers-card" style="top:1890px;height:140px;--base-height:140px;">
 <div class="text-[10px] font-bold climbers-time leading-none">13:30 - 13:50</div>
-<div class="session-content climbers-title">“おもろい”を問い直す<br>テレビ業界の名物プロデューサーの人生の特別講義(仮)</div>
+<div class="session-content climbers-title">“おもろい”を問い直す<br/>テレビ業界の名物プロデューサーの人生の特別講義(仮)</div>
 <div class="speaker-lines">西田 二郎<span>｜未来のテレビを考える会 代表理事</span></div>
 </article>
 <article class="session-card climbers-card" style="top:2030px;height:140px;--base-height:140px;">
 <div class="text-[10px] font-bold climbers-time leading-none">13:50 - 14:10</div>
-<div class="session-content climbers-title">現代社会の悩みに寄り添う<br>松長潤慶による人生の特別講義(仮)</div>
+<div class="session-content climbers-title">現代社会の悩みに寄り添う<br/>松長潤慶による人生の特別講義(仮)</div>
 <div class="speaker-lines">松長 潤慶<span>｜高野山大学 学長</span></div>
 </article>
 <article class="session-card climbers-card" style="top:2310px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">14:30 - 15:10</div>
-<div class="session-content climbers-title">「JAPANを率いた挑戦と日本野球の未来」<br>〜選手・編成・監督で見た“世界一を目指すプロセス”と自律的な挑戦〜</div>
+<div class="session-content climbers-title">「JAPANを率いた挑戦と日本野球の未来」<br/>〜選手・編成・監督で見た“世界一を目指すプロセス”と自律的な挑戦〜</div>
 <div class="speaker-lines">井端 弘和<span>｜元侍ジャパントップチーム監督</span></div>
 </article>
 <article class="session-card climbers-card" style="top:2590px;height:210px;--base-height:210px;">
 <div class="text-[10px] font-bold climbers-time leading-none">15:10 - 15:40</div>
-<div class="session-content climbers-title">前例なき挑戦。「信念と信頼」で勝ち取った金バッチ<br>金融変革の実践者が贈る人生の特別講義</div>
-<div class="speaker-lines">山本 浩平<span>｜デジタル証券株式会社</span><br>加藤 シルビア<span>｜フリーアナウンサー</span></div>
+<div class="session-content climbers-title">前例なき挑戦。「信念と信頼」で勝ち取った金バッチ<br/>金融変革の実践者が贈る人生の特別講義</div>
+<div class="speaker-lines">山本 浩平<span>｜デジタル証券株式会社</span><br/>加藤 シルビア<span>｜フリーアナウンサー</span></div>
 </article>
 <article class="session-card climbers-card" style="top:2800px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">15:40 - 16:20</div>
-<div class="session-content climbers-title">今注目の二人　対談決定<br>ビジネスパーソン必見の特別講義(仮)</div>
-<div class="speaker-lines">河村 真木子<span>｜起業家／Holland Village Members’ Club 主宰</span><br>田中 渓<span>｜元ゴールドマン・サックス／現投資会社責任者</span></div>
+<div class="session-content climbers-title">今注目の二人　対談決定<br/>ビジネスパーソン必見の特別講義(仮)</div>
+<div class="speaker-lines">河村 真木子<span>｜起業家／Holland Village Members’ Club 主宰</span><br/>田中 渓<span>｜元ゴールドマン・サックス／現投資会社責任者</span></div>
 </article>
 <article class="session-card climbers-card" style="top:3220px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">16:40 - 17:20</div>
-<div class="session-content climbers-title">「大丈夫、策は無限にある」<br>デザイナー  コシノジュンコが語る人生の特別講義</div>
-<div class="speaker-lines">コシノ ジュンコ<span>｜デザイナー</span><br>池田 なみ子<span>｜ラジオDJ</span></div>
+<div class="session-content climbers-title">「大丈夫、策は無限にある」<br/>デザイナー  コシノジュンコが語る人生の特別講義</div>
+<div class="speaker-lines">コシノ ジュンコ<span>｜デザイナー</span><br/>池田 なみ子<span>｜ラジオDJ</span></div>
 </article>
 <article class="session-card climbers-card" style="top:3500px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">17:20 - 18:00</div>
-<div class="session-content climbers-title">AIは私たちを”希望の時代”に導くか？<br>️データ×AIがもたらす、意思決定の進化</div>
-<div class="speaker-lines">平尾 喜昭<span>｜株式会社サイカ</span><br>安宅 和人<span>｜慶應義塾大学教授</span></div>
+<div class="session-content climbers-title">AIは私たちを”希望の時代”に導くか？<br/>️データ×AIがもたらす、意思決定の進化</div>
+<div class="speaker-lines">平尾 喜昭<span>｜株式会社サイカ</span><br/>安宅 和人<span>｜慶應義塾大学教授</span></div>
 </article>
 <article class="session-card climbers-card" style="top:3850px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">18:10 - 18:50</div>
-<div class="session-content climbers-title">ドイツから来日決定<br>岡崎慎司の人生の特別講義(仮)</div>
-<div class="speaker-lines">岡崎 慎司<span>｜FC Basara Mainz 監督</span><br>鴻池 忠嗣<span>｜鴻池運輸株式会社</span></div>
+<div class="session-content climbers-title">ドイツから来日決定<br/>岡崎慎司の人生の特別講義(仮)</div>
+<div class="speaker-lines">岡崎 慎司<span>｜FC Basara Mainz 監督</span><br/>鴻池 忠嗣<span>｜鴻池運輸株式会社</span></div>
 </article>
 <article class="session-card climbers-card" style="top:4130px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">18:50 - 19:30</div>
-<div class="session-content climbers-title">「勝てる場所を、自分で選び直す。」<br>〜“一発屋”から子どもたちのヒーローへ。あなたに届けたい再起の教科書〜</div>
+<div class="session-content climbers-title">「勝てる場所を、自分で選び直す。」<br/>〜“一発屋”から子どもたちのヒーローへ。あなたに届けたい再起の教科書〜</div>
 <div class="speaker-lines">小島 よしお<span>｜お笑い芸人</span></div>
 </article>
 <article class="session-card climbers-card" style="top:4410px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">19:30 - 20:10</div>
-<div class="session-content climbers-title">片山さつきヒストリー<br>混迷の時代を生き抜くヒント</div>
+<div class="session-content climbers-title">片山さつきヒストリー<br/>混迷の時代を生き抜くヒント</div>
 <div class="speaker-lines">片山 さつき<span>｜財務大臣</span></div>
 </article>
 <article class="session-card climbers-card" style="top:4690px;height:70px;--base-height:70px;">
 <div class="text-[10px] font-bold climbers-time leading-none">20:10 - 20:20</div>
 <div class="session-content climbers-title">DAY1 クロージング</div>
-
 </article>
 </div>
 </div>
 </div>
 </div>
-<div class="tab-content  hidden relative" id="day2">
+<div class="tab-content hidden relative" id="day2">
 <div class="time-col flex-shrink-0 bg-white/95 backdrop-blur border-r border-slate-200">
 <div class="stage-header border-b border-slate-200"></div>
 <div class="relative timeline-grid border-r border-slate-200/50" style="height:4200px;">
@@ -333,26 +256,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージA</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:4200px;">
-<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:210px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">9:30 - 10:10</div>
-<div class="session-content leading-tight">真のCHROとは。- 経営を加速させ、組織を守る「人的資本経営」の本質 -</div>
-</article>
-<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:840px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">11:00 - 11:40</div>
-<div class="session-content leading-tight">AIは導入した。でも現場が動かない。－AI活用を定着させる“学び続ける組織”のつくり方－</div>
-</article>
-<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:1470px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">12:30 - 13:10</div>
-<div class="session-content leading-tight">自信を育む「学び直し」のリアル - 変化の時代に、女性に贈る処方箋（仮）</div>
-</article>
-<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:2100px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">14:00 - 14:40</div>
-<div class="session-content leading-tight">真の人的資本経営：「開示」の先にある「企業価値」への変換（仮）</div>
-</article>
-<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:2730px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">15:30 - 16:10</div>
-<div class="session-content leading-tight">組織の『重力』を脱し、個の『覚悟』を駆動する。仕組みを超えて、人が動くカルチャーの設計図（仮）</div>
-</article>
+<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:210px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">9:30 - 10:10</div><div class="session-content leading-tight">真のCHROとは。- 経営を加速させ、組織を守る「人的資本経営」の本質 -</div><div class="speaker-lines beyond-speakers">有沢 正人<span>｜HR GENESIS株式会社 代表取締役 元いすゞ自動車株式会社 CHRO 人事担当EVP</span><br/>志水 静香<span>｜株式会社Funleash代表取締役</span></div></article>
+<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:840px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">11:00 - 11:40</div><div class="session-content leading-tight">AIは導入した。でも現場が動かない。－AI活用を定着させる“学び続ける組織”のつくり方－</div><div class="speaker-lines beyond-speakers">伊藤 卓也<span>｜オムロン株式会社グローバルビジネスプロセス&amp;ＩＴ革新本部 デジタル戦略構築部 部長</span><br/>臼井 拓水<span>｜Michikusa株式会社 CEO</span><br/>藤井 雅徳<span>｜株式会社ベネッセコーポレーション 執行役員 AI教育研究所 所長 デジタルハリウッド株式会社 代表取締役社長 兼 CEO</span></div></article>
+<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:1470px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">12:30 - 13:10</div><div class="session-content leading-tight">自信を育む「学び直し」のリアル - 変化の時代に、女性に贈る処方箋（仮）</div><div class="speaker-lines beyond-speakers">福田 恵里<span>｜SHE株式会社 代表取締役CEO／CCO</span><br/>吉井 朋<span>｜デジタルハリウッド株式会社スクール事業部 STUDIO本部 シニアマネージャー</span><br/>藤井 雅徳<span>｜株式会社ベネッセコーポレーション 常務執行役員 兼 大学・社会人カンパニー長</span></div></article>
+<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:2100px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">14:00 - 14:40</div><div class="session-content leading-tight">真の人的資本経営：「開示」の先にある「企業価値」への変換（仮）</div><div class="speaker-lines beyond-speakers">田中 弦<span>｜Unipos株式会社代表取締役会長</span></div></article>
+<article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:2730px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-rose-600 mb-1 leading-none">15:30 - 16:10</div><div class="session-content leading-tight">組織の『重力』を脱し、個の『覚悟』を駆動する。仕組みを超えて、人が動くカルチャーの設計図（仮）</div><div class="speaker-lines beyond-speakers">田中安人<span>｜エン株式会社常務執行役員 公益財団法人日本スポーツ協会ブランド戦略委員会委員</span></div></article>
 </div>
 </div>
 <div class="flex-1 min-w-[210px] border-r border-slate-200/60 relative group">
@@ -361,22 +269,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージB</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:4200px;">
-<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:560px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">10:20 - 11:00</div>
-<div class="session-content leading-tight">従業員エンゲージメントを爆上げするための人事制度設計と「KPIの定め方」（仮）</div>
-</article>
-<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:1190px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">11:50 - 12:30</div>
-<div class="session-content leading-tight">AI時代に人事こそが「読書」をすべき理由（仮）</div>
-</article>
-<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:1820px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">13:20 - 14:00</div>
-<div class="session-content leading-tight">組織が機能するための「相互感謝」の作り方（仮）</div>
-</article>
-<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:2450px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">14:50 - 15:30</div>
-<div class="session-content leading-tight">結局リモートとハイブリットとフル出社どれがいいの？オフィス環境と働き方の最適解（仮）</div>
-</article>
+<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:560px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">10:20 - 11:00</div><div class="session-content leading-tight">従業員エンゲージメントを爆上げするための人事制度設計と「KPIの定め方」（仮）</div><div class="speaker-lines beyond-speakers">田邉 直記<span>｜NTT株式会社総務部門 人材戦略担当 担当課長</span></div></article>
+<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:1190px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">11:50 - 12:30</div><div class="session-content leading-tight">AI時代に人事こそが「読書」をすべき理由（仮）</div><div class="speaker-lines beyond-speakers">朱 喜哲<span>｜大阪大学／電通招へい准教授／チーフ・リサーチ・ディレクター</span></div></article>
+<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:1820px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">13:20 - 14:00</div><div class="session-content leading-tight">組織が機能するための「相互感謝」の作り方（仮）</div><div class="speaker-lines beyond-speakers">池原 真佐子<span>｜株式会社Mentor For代表取締役CEO</span></div></article>
+<article class="session-card bg-sky-50 border-sky-200 text-sky-900 time-sky" style="top:2450px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-sky-600 mb-1 leading-none">14:50 - 15:30</div><div class="session-content leading-tight">結局リモートとハイブリットとフル出社どれがいいの？オフィス環境と働き方の最適解（仮）</div><div class="speaker-lines beyond-speakers">山下 正太郎<span>｜コクヨ株式会社ヨコク研究所／ワークスタイル研究所 所長</span></div></article>
 </div>
 </div>
 <div class="flex-1 min-w-[210px] border-r border-slate-200/60 relative group">
@@ -385,26 +281,11 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージC</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:4200px;">
-<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:560px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">10:20 - 11:00</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
-<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:1120px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">11:40 - 12:20</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
-<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:1680px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">13:00 - 13:40</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
-<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:2240px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">14:20 - 15:00</div>
-<div class="session-content leading-tight">人材不足を突破する、AI×データ人材戦略</div>
-</article>
-<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:2800px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">15:40 - 16:20</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
+<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:560px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">10:20 - 11:00</div><div class="session-content leading-tight">Coming Soon</div></article>
+<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:1120px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">11:40 - 12:20</div><div class="session-content leading-tight">Coming Soon</div></article>
+<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:1680px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">13:00 - 13:40</div><div class="session-content leading-tight">Coming Soon</div></article>
+<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:2240px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">14:20 - 15:00</div><div class="session-content leading-tight">人材不足を突破する、AI×データ人材戦略</div><div class="speaker-lines beyond-speakers">佐藤 泰秀<span>｜株式会社XAION DATA代表取締役CEO</span></div></article>
+<article class="session-card bg-emerald-50 border-emerald-200 text-emerald-900 time-emerald" style="top:2800px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-emerald-600 mb-1 leading-none">15:40 - 16:20</div><div class="session-content leading-tight">Coming Soon</div></article>
 </div>
 </div>
 <div class="flex-1 min-w-[210px] border-r border-slate-200/60 relative group">
@@ -413,22 +294,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージE</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:4200px;">
-<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:840px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">11:00 - 11:40</div>
-<div class="session-content leading-tight">AIを活用した人材開発の内製化を考える　情報交換会（仮）</div>
-</article>
-<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:1470px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">12:30 - 13:10</div>
-<div class="session-content leading-tight">採用におけるAI活用　情報交換会　（仮）</div>
-</article>
-<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:2100px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">14:00 - 14:40</div>
-<div class="session-content leading-tight">タレントマネジメントを活用した社員の自律的なキャリア開発を考える 情報交換会（仮）</div>
-</article>
-<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:2730px;height:280px;--base-height:280px;">
-<div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">15:30 - 16:10</div>
-<div class="session-content leading-tight">ミドル/シニア社員のAIリスキリング事例　情報交換会（仮）</div>
-</article>
+<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:840px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">11:00 - 11:40</div><div class="session-content leading-tight">AIを活用した人材開発の内製化を考える 情報交換会（仮）</div></article>
+<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:1470px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">12:30 - 13:10</div><div class="session-content leading-tight">採用におけるAI活用 情報交換会 （仮）</div></article>
+<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:2100px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">14:00 - 14:40</div><div class="session-content leading-tight">タレントマネジメントを活用した社員の自律的なキャリア開発を考える 情報交換会（仮）</div></article>
+<article class="session-card bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 time-fuchsia" style="top:2730px;height:280px;--base-height:280px;"><div class="text-[10px] font-bold text-fuchsia-600 mb-1 leading-none">15:30 - 16:10</div><div class="session-content leading-tight">ミドル/シニア社員のAIリスキリング事例 情報交換会（仮）</div></article>
 </div>
 </div>
 <div class="flex-1 min-w-[210px] border-r border-slate-200/60 relative group">
@@ -437,22 +306,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージF</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:4200px;">
-<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:840px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">11:00 - 12:00</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
-<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:1470px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">12:30 - 13:30</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
-<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2100px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">14:00 - 15:00</div>
-<div class="session-content leading-tight">Employee Success実現のための社内コーチング＆キャリアカウンセリング戦略</div>
-</article>
-<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2730px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">15:30 - 16:30</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
+<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:840px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">11:00 - 12:00</div><div class="session-content leading-tight">Coming Soon</div></article>
+<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:1470px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">12:30 - 13:30</div><div class="session-content leading-tight">Coming Soon</div><div class="speaker-lines beyond-speakers">池田 貴将<span>｜株式会社オープンプラットフォーム代表取締役『覚悟の磨き方』『人生アップデート大全』著書</span></div></article>
+<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2100px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">14:00 - 15:00</div><div class="session-content leading-tight">Employee Success実現のための社内コーチング＆キャリアカウンセリング戦略</div><div class="speaker-lines beyond-speakers">平山 鋼之介<span>｜Sansan株式会社 人事本部 プロフェッショナルコーチログミー株式会社 執行役員CHRO 人事総務部長 兼 経営管理部長</span></div></article>
+<article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2730px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-purple-600 mb-1 leading-none">15:30 - 16:30</div><div class="session-content leading-tight">Coming Soon</div></article>
 </div>
 </div>
 <div class="flex-1 min-w-[210px] border-r border-slate-200/60 relative group">
@@ -461,22 +318,10 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <p class="stage-kicker">ステージG</p>
 </div>
 <div class="relative z-10 timeline-grid" style="height:4200px;">
-<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:840px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">11:00 - 12:00</div>
-<div class="session-content leading-tight">働きがいと高業績を両立するマネジメント手法（仮）</div>
-</article>
-<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:1470px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">12:30 - 13:30</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
-<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2100px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">14:00 - 15:00</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
-<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2730px;height:420px;--base-height:420px;">
-<div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">15:30 - 16:30</div>
-<div class="session-content leading-tight">Coming Soon</div>
-</article>
+<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:840px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">11:00 - 12:00</div><div class="session-content leading-tight">働きがいと高業績を両立するマネジメント手法（仮）</div></article>
+<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:1470px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">12:30 - 13:30</div><div class="session-content leading-tight">Coming Soon</div></article>
+<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2100px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">14:00 - 15:00</div><div class="session-content leading-tight">Coming Soon</div></article>
+<article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2730px;height:420px;--base-height:420px;"><div class="text-[10px] font-bold text-amber-600 mb-1 leading-none">15:30 - 16:30</div><div class="session-content leading-tight">Coming Soon</div></article>
 </div>
 </div>
 <div class="climbers-track relative group">
@@ -488,7 +333,6 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <article class="session-card climbers-card" style="top:1260px;height:70px;--base-height:70px;">
 <div class="text-[10px] font-bold climbers-time leading-none">12:00 - 12:10</div>
 <div class="session-content climbers-title">DAY2 オープニング</div>
-
 </article>
 <article class="session-card climbers-card" style="top:1330px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">12:10 - 12:50</div>
@@ -497,7 +341,7 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 </article>
 <article class="session-card climbers-card" style="top:1610px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">12:50 - 13:30</div>
-<div class="session-content climbers-title">世界と戦い続ける日本の司令塔<br>壁を突破し続けるための「武器の磨き方」</div>
+<div class="session-content climbers-title">世界と戦い続ける日本の司令塔<br/>壁を突破し続けるための「武器の磨き方」</div>
 <div class="speaker-lines">富樫 勇樹<span>｜プロバスケットボール選手</span></div>
 </article>
 <article class="session-card climbers-card" style="top:1890px;height:140px;--base-height:140px;">
@@ -508,52 +352,50 @@ tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Noto Sans JP"', 's
 <article class="session-card climbers-card" style="top:2030px;height:140px;--base-height:140px;">
 <div class="text-[10px] font-bold climbers-time leading-none">13:50 - 14:10</div>
 <div class="session-content climbers-title">Coming Soon</div>
-
 </article>
 <article class="session-card climbers-card" style="top:2310px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">14:30 - 15:10</div>
-<div class="session-content climbers-title">叛逆のカリスマ<br>魔裟斗の人生の特別講義(仮)</div>
+<div class="session-content climbers-title">叛逆のカリスマ<br/>魔裟斗の人生の特別講義(仮)</div>
 <div class="speaker-lines">魔裟斗<span>｜元K-1世界チャンピオン</span></div>
 </article>
 <article class="session-card climbers-card" style="top:2590px;height:140px;--base-height:140px;">
 <div class="text-[10px] font-bold climbers-time leading-none">15:10 - 15:30</div>
-<div class="session-content climbers-title">「4回戦ボーイの『敗者復活戦』」<br>アスリート出身“だから”証明できる、逃げない経営論</div>
+<div class="session-content climbers-title">「4回戦ボーイの『敗者復活戦』」<br/>アスリート出身“だから”証明できる、逃げない経営論</div>
 <div class="speaker-lines">野口 義弘<span>｜有限会社野口石油</span></div>
 </article>
 <article class="session-card climbers-card" style="top:2730px;height:140px;--base-height:140px;">
 <div class="text-[10px] font-bold climbers-time leading-none">15:30 - 15:50</div>
-<div class="session-content climbers-title">「愛は与えっぱなし」<br> 〜何度裏切られても人を信じ抜く、常識破りのマネジメント〜</div>
+<div class="session-content climbers-title">「愛は与えっぱなし」<br/> 〜何度裏切られても人を信じ抜く、常識破りのマネジメント〜</div>
 <div class="speaker-lines">渡邊 大知<span>｜株式会社JMC</span></div>
 </article>
 <article class="session-card climbers-card" style="top:2870px;height:140px;--base-height:140px;">
 <div class="text-[10px] font-bold climbers-time leading-none">15:50 - 16:10</div>
-<div class="session-content climbers-title">「失ったものではなく、残された可能性を見る」<br>日本のパラ陸上を創った義肢装具士の伴走論</div>
+<div class="session-content climbers-title">「失ったものではなく、残された可能性を見る」<br/>日本のパラ陸上を創った義肢装具士の伴走論</div>
 <div class="speaker-lines">臼井 二美男<span>｜義肢装具士</span></div>
 </article>
 <article class="session-card climbers-card" style="top:3150px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">16:30 - 17:10</div>
-<div class="session-content climbers-title">進化を止めない女優<br>橋本環奈の人生の特別講義</div>
+<div class="session-content climbers-title">進化を止めない女優<br/>橋本環奈の人生の特別講義</div>
 <div class="speaker-lines">橋本 環奈<span>｜女優</span></div>
 </article>
 <article class="session-card climbers-card" style="top:3430px;height:210px;--base-height:210px;">
 <div class="text-[10px] font-bold climbers-time leading-none">17:10 - 17:40</div>
-<div class="session-content climbers-title">勝負はまだ。全てを失った後の「ラスト5秒の逆転劇」<br>ラッパー社長が生むつながりの真価(仮)</div>
+<div class="session-content climbers-title">勝負はまだ。全てを失った後の「ラスト5秒の逆転劇」<br/>ラッパー社長が生むつながりの真価(仮)</div>
 <div class="speaker-lines">秋山 広宣<span>｜株式会社INFORICH代表取締役</span></div>
 </article>
 <article class="session-card climbers-card" style="top:3640px;height:140px;--base-height:140px;">
 <div class="text-[10px] font-bold climbers-time leading-none">17:40 - 18:00</div>
-<div class="session-content climbers-title">「キャリアは逆算しない。15歳のココイチアルバイトから22歳の社長へ」<br>〜Z世代社長の”巻き込み”術〜</div>
+<div class="session-content climbers-title">「キャリアは逆算しない。15歳のココイチアルバイトから22歳の社長へ」<br/>〜Z世代社長の”巻き込み”術〜</div>
 <div class="speaker-lines">諸沢 莉乃<span>｜株式会社スカイスクレイパー</span></div>
 </article>
 <article class="session-card climbers-card" style="top:3780px;height:280px;--base-height:280px;">
 <div class="text-[10px] font-bold climbers-time leading-none">18:00 - 18:40</div>
-<div class="session-content climbers-title">「郷ひろみ」の誕生と輝き続ける理由<br>最高の準備で作り出す 最高の瞬間</div>
+<div class="session-content climbers-title">「郷ひろみ」の誕生と輝き続ける理由<br/>最高の準備で作り出す 最高の瞬間</div>
 <div class="speaker-lines">郷 ひろみ<span>｜歌手</span></div>
 </article>
 <article class="session-card climbers-card" style="top:4060px;height:70px;--base-height:70px;">
 <div class="text-[10px] font-bold climbers-time leading-none">18:40 - 18:50</div>
 <div class="session-content climbers-title">DAY2 クロージング</div>
-
 </article>
 </div>
 </div>
