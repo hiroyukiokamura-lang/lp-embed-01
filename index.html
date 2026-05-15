@@ -22,11 +22,10 @@
         body { background-color: #f8fafc; color: #334155; }
         .text-gradient { background: linear-gradient(135deg, #0ea5e9 0%, #14b8a6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .bg-gradient-custom { background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%); }
-        .timetable-wrapper { min-width: 3800px; }
+        .timetable-wrapper { min-width: 4100px; }
         .time-col { width: 80px; position: sticky; left: 0; z-index: 40; }
         .stage-header { height: 140px; position: sticky; top: 0; z-index: 30; border-bottom: 1px solid #e2e8f0; }
         
-        /* グリッド背景の開始位置をコンテンツ開始(60px)に合わせる */
         .timeline-grid { 
             background-image: linear-gradient(to bottom, #e2e8f0 1px, transparent 1px); 
             background-size: 100% 420px; 
@@ -53,12 +52,10 @@
         .climbers-time { color: #c2410c; margin-bottom: 10px; font-weight: 800; font-size: 14px; }
         .climbers-title { font-size: 17px; line-height: 1.45; font-weight: 950; color: #431407; letter-spacing: -0.01em; }
         
-        /* 10分枠用：Opening/Closing */
         .climbers-card.is-compact { padding: 6px 14px; display: flex; align-items: center; gap: 12px; }
         .climbers-card.is-compact .climbers-time { font-size: 14px; margin-bottom: 0; white-space: nowrap; }
         .climbers-card.is-compact .climbers-title { font-size: 17px; line-height: 1.2; }
         
-        /* 20分枠用：フォントサイズは変えず、余白を極限まで詰める */
         .climbers-card.is-condensed { padding: 5px 12px; display: flex; flex-direction: column; justify-content: center; }
         .climbers-card.is-condensed .climbers-time { font-size: 14px; margin-bottom: 2px; line-height: 1; }
         .climbers-card.is-condensed .climbers-title { font-size: 17px; line-height: 1.15; margin-bottom: 0; }
@@ -113,7 +110,7 @@
                             </div>
                             <div class="relative z-10 timeline-grid" style="height:5110px;">
                                 <article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:270px;height:280px;"><div class="time-label text-rose-600 font-black">9:30 - 10:10</div><div class="session-content">組織の境界を越える人材戦略。CHROが拓く人的資本経営の次の一手</div><div class="speaker-lines text-rose-800">花田 琢也<span>｜日揮ホールディングス株式会社 専務執行役員 CHRO</span><br/>唐澤 俊輔<span>｜Almoha 共同創業者COO ／Startup Culture Lab. 所長</span></div></article>
-                                <article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:900px;height:280px;"><div class="time-label text-rose-600 font-black">11:00 - 11:40</div><div class="session-content">AI時代、組織の”学び”はアップデートされたか？個人と企業の成長を両立させる人財戦略</div></article>
+                                <article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:900px;height:280px;"><div class="time-label text-rose-600 font-black">11:00 - 11:40</div><div class="session-content">AI時代に"ヒト"の価値を爆発させる。個の成長を企業の財産に変えるマネジメント変革</div></article>
                                 <article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:1530px;height:280px;"><div class="time-label text-rose-600 font-black">12:30 - 13:10</div><div class="session-content">“愛される企業”への変革。組織のプライドを取り戻す経営</div><div class="speaker-lines text-rose-800">ハロルド・ジョージ・メイ<span>｜元タカラトミー社長／現アース製薬・キユーピー社外取締役／パナソニック顧問</span></div></article>
                                 <article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:2160px;height:280px;"><div class="time-label text-rose-600 font-black">14:00 - 14:40</div><div class="session-content">"個"の充足を"組織"の熱量へ変える、ウェルビーイング経営の本質</div><div class="speaker-lines text-rose-800">岡田 悠希<span>｜株式会社ポーラ HR本部 本部長</span><br/>リュウ シーチャウ<span>｜株式会社サニーサイドアップ 代表取締役社長</span></div></article>
                                 <article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:2790px;height:280px;"><div class="time-label text-rose-600 font-black">15:30 - 16:10</div><div class="session-content">個人の熱量を事業成長へ繋ぐ「フロー経営」の本質。社員のパフォーマンスを最大化し、組織の停滞を打破する泥臭い変革の急所</div><div class="speaker-lines text-rose-800">原田 信也<span>｜株式会社丸井グループ 人事部長</span><br/>室住 篤子<span>｜株式会社NTTドコモ 総務人事部 キャリアデザイン室 室長</span><br/>石田 茂<span>｜ポらす株式会社 人事部長 ／ポラテック株式会社 監査役</span></div></article>
@@ -153,7 +150,7 @@
                         <div class="flex-1 min-w-[300px] border-r border-slate-200/60 relative group">
                             <div class="stage-header bg-white/95 backdrop-blur flex flex-col items-center justify-center px-4">
                                 <p class="stage-kicker">ステージD</p>
-                                <h3 class="stage-title text-indigo-600">課題解決型ワークショップ ステージD</h3>
+                                <h3 class="stage-title text-indigo-600">課題解決型ワークショップ</h3>
                             </div>
                             <div class="relative z-10 timeline-grid" style="height:5110px;">
                                 <article class="session-card bg-indigo-50 border-indigo-200 text-indigo-900 time-indigo" style="top:900px;height:280px;"><div class="time-label text-indigo-600 font-black">11:00 - 11:40</div><div class="session-content">【サービス体験会】伴走型・オーダーメイドAI研修（powered by DMM.com）</div></article>
@@ -188,6 +185,20 @@
                                 <article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:1530px;height:420px;"><div class="time-label text-purple-600 font-black">12:30 - 13:30</div><div class="session-content">フィードバック経営 -「沈黙の組織」から「高め合う組織」へ</div><div class="speaker-lines text-purple-800">三村 真宗<span>｜株式会社U-ZERO 代表取締役CEO兼CPO</span></div></article>
                                 <article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2160px;height:420px;"><div class="time-label text-purple-600 font-black">14:00 - 15:00</div><div class="session-content">「指示」を捨て、「生態系」を創る —— 変化を味方につける自己進化型組織のつくり方</div><div class="speaker-lines text-purple-800">杉山 誠<span>｜株式会社YURAGI DESIGN 代表取締役</span></div></article>
                                 <article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2790px;height:630px;"><div class="time-label text-purple-600 font-black">15:30 - 17:00</div><div class="session-content">明日から組織が動き出す。現場の『実行停滞』を打破する、AI時代のマネジメント・ハック（仮）</div></article>
+                            </div>
+                        </div>
+
+                        <!-- STAGE G (Day 1) -->
+                        <div class="flex-1 min-w-[300px] border-r border-slate-200/60 relative group">
+                            <div class="stage-header bg-white/95 backdrop-blur flex flex-col items-center justify-center px-4">
+                                <p class="stage-kicker">ステージG</p>
+                                <h3 class="stage-title text-amber-600">HR Solution Academy</h3>
+                            </div>
+                            <div class="relative z-10 timeline-grid" style="height:5110px;">
+                                <article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:900px;height:420px;"><div class="time-label text-amber-600 font-black">11:00 - 12:00</div><div class="session-content">AI時代のマネジメント進化論 〜罰ゲーム化を乗り越える管理職の再設計〜</div><div class="speaker-lines text-amber-800">木村 憲仁<span>｜株式会社mento 代表取締役 CEO</span></div></article>
+                                <article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:1530px;height:420px;"><div class="time-label text-amber-600 font-black">12:30 - 13:30</div><div class="session-content">人事部がない会社の最初の一手！経営と現場を結ぶ「人材育成設計」</div><div class="speaker-lines text-amber-800">武田 真純<span>｜ＴＯＭＡコンサルタンツグループ株式会社 ビジネスサポート部 人材・組織開発チーム チーフコンサルタント</span></div></article>
+                                <article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2160px;height:420px;"><div class="time-label text-amber-600 font-black">14:00 - 15:00</div><div class="session-content">若手社員の離職防止に繋がる人事制度のポイント</div><div class="speaker-lines text-amber-800">五十嵐 未来<span>｜ハイマネージャー株式会社 代表取締役社長</span></div></article>
+                                <article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2790px;height:420px;"><div class="time-label text-amber-600 font-black">15:30 - 16:30</div><div class="session-content">【サービス体験会】図工をツールとした共創ワークショップ（powered by anohi）</div><div class="speaker-lines text-amber-800">井上 陽介<span>｜anohi 代表</span></div></article>
                             </div>
                         </div>
 
@@ -237,7 +248,7 @@
                                 <h3 class="stage-title text-rose-600">CHRO AGENDA</h3>
                             </div>
                             <div class="relative z-10 timeline-grid" style="height:4300px;">
-                                <article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:270px;height:280px;"><div class="time-label text-rose-600 font-black">9:30 - 10:10</div><div class="session-content">真のCHROとは。- 経営を加速させ、組織を守る「人的資本経営」の本質 -</div><div class="speaker-lines text-rose-800">有沢 正人<span>｜HR GENESIS株式会社 代表取締役 ／元いすゞ自動車株式会社 CHRO 人事担当EVP</span><br/>志水 静香<span>｜株式会社Funleash 代表取締役</span></div></article>
+                                <article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:270px;height:280px;"><div class="time-label text-rose-600 font-black">9:30 - 10:10</div><div class="session-content">真のCHROとは。個々の才能を事業の推進力に変え、組織能力を最大化する人的資本経営の本質</div><div class="speaker-lines text-rose-800">有沢 正人<span>｜HR GENESIS株式会社 代表取締役 ／元いすゞ自動車株式会社 CHRO 人事担当EVP</span><br/>志水 静香<span>｜株式会社Funleash 代表取締役</span></div></article>
                                 <article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:900px;height:280px;"><div class="time-label text-rose-600 font-black">11:00 - 11:40</div><div class="session-content">AIは導入した。Level現場が動かない。－AI活用を定着させる“学び続ける組織”のつくり方－</div><div class="speaker-lines text-rose-800">伊藤 卓也<span>｜オムロン株式会社 グローバルビジネスプロセス&amp;ＩＴ革新本部 デジタル戦略構築部 部長</span><br/>臼井 拓水<span>｜Michikusa株式会社 CEO</span><br/>藤井 雅徳<span>｜株式会社ベネッセコーポレーション 執行役員 AI教育研究所 所長 ／デジタルハリウッド株式会社 代表取締役社長 兼 CEO</span></div></article>
                                 <article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:1530px;height:280px;"><div class="time-label text-rose-600 font-black">12:30 - 13:10</div><div class="session-content">自信を育む「学び直し」のリアル - 変化の時代に、女性に贈る処方箋</div><div class="speaker-lines text-rose-800">福田 恵里<span>｜SHE株式会社 代表取締役CEO／CCO</span><br/>吉井 朋<span>｜デジタルハリウッド株式会社 スクール事業部 STUDIO本部 シニアマネージャー</span><br/>藤井 雅徳<span>｜株式会社ベネッセコーポレーション 常務執行役員 兼 大学・社会人カンパニー長</span></div></article>
                                 <article class="session-card bg-rose-50 border-rose-200 text-rose-900 time-rose" style="top:2160px;height:280px;"><div class="time-label text-rose-600 font-black">14:00 - 14:40</div><div class="session-content">真の人的資本経営：「開示」の先にある「企業価値」への変換</div><div class="speaker-lines text-rose-800">堀内 勝美<span>｜株式会社滋賀銀行 代表取締役専務執行役員</span><br/>田中 弦<span>｜Unipos株式会社 代表取締役会長</span></div></article>
@@ -276,7 +287,7 @@
                         <div class="flex-1 min-w-[300px] border-r border-slate-200/60 relative group">
                             <div class="stage-header bg-white/95 backdrop-blur flex flex-col items-center justify-center px-4">
                                 <p class="stage-kicker">ステージD</p>
-                                <h3 class="stage-title text-indigo-600">課題解決型ワークショップ ステージD</h3>
+                                <h3 class="stage-title text-indigo-600">課題解決型ワークショップ</h3>
                             </div>
                             <div class="relative z-10 timeline-grid" style="height:4300px;">
                                 <article class="session-card bg-indigo-50 border-indigo-200 text-indigo-900 time-indigo" style="top:900px;height:280px;"><div class="time-label text-indigo-600 font-black">11:00 - 11:40</div><div class="session-content">【サービス体験会】組織/個人のAI活用力をスコア化（powered by ninau）</div></article>
@@ -309,8 +320,22 @@
                             <div class="relative z-10 timeline-grid" style="height:4300px;">
                                 <article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:900px;height:420px;"><div class="time-label text-purple-600 font-black">11:00 - 12:00</div><div class="session-content">AI時代に求められる「感情マネジメント力」</div><div class="speaker-lines text-purple-800">松島 徹<span>｜６s.株式会社代表取締役／一般社団法人日本アンガーマネジメント協会代表理事</span></div></article>
                                 <article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:1530px;height:420px;"><div class="time-label text-purple-600 font-black">12:30 - 13:30</div><div class="session-content">経営者・リーダへ「覚悟の磨き方」研修（仮）</div><div class="speaker-lines text-purple-800">池田 貴将<span>｜『覚悟の磨き方』『人生アップデート大全』著書 ／株式会社オープンプラットフォーム代表取締役</span></div></article>
-                                <article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2160px;height:420px;"><div class="time-label text-purple-600 font-black">14:00 - 15:00</div><div class="session-content">Employee Success実現のための社内コーチング＆キャリアカウンセリング戦略</div><div class="speaker-lines text-purple-800">平山 鋼之介<span>｜Sansan株式会社 人事本部 プロフェッショナルコーチ ／ログミー株式会社 執行役員CHRO 人事総務部長 兼 経営管理部長</span></div></article>
+                                <article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:1530px;height:420px;"><div class="time-label text-purple-600 font-black">12:30 - 13:30</div><div class="session-content">大手企業で価値のある新規事業が生まれる組織を作る方法</div><div class="speaker-lines text-purple-800">日比野 由空<span>｜seeink株式会社 代表取締役社長</span></div></article>
                                 <article class="session-card bg-purple-50 border-purple-200 text-purple-900 time-purple" style="top:2790px;height:630px;"><div class="time-label text-purple-600 font-black">15:30 - 17:00</div><div class="session-content">90分で経営を疑似体験する、事業開発人材の育成ワークショップ「T2D3」</div><div class="speaker-lines text-purple-800">笹川 竜星<span>｜株式会社リブ・コンサルティング ベンチャー事業部 シニアプロフェッショナル／T2D3事業責任者</span></div></article>
+                            </div>
+                        </div>
+
+                        <!-- STAGE G (Day 2) -->
+                        <div class="flex-1 min-w-[300px] border-r border-slate-200/60 relative group">
+                            <div class="stage-header bg-white/95 backdrop-blur flex flex-col items-center justify-center px-4">
+                                <p class="stage-kicker">ステージG</p>
+                                <h3 class="stage-title text-amber-600">HR Solution Academy</h3>
+                            </div>
+                            <div class="relative z-10 timeline-grid" style="height:4300px;">
+                                <article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:900px;height:420px;"><div class="time-label text-amber-600 font-black">11:00 - 12:00</div><div class="session-content">働きがいと高業績を両立するマネジメント手法</div><div class="speaker-lines text-amber-800">大嶋 祥之<span>｜アチーブメントHRソリューションズ株式会社 組織変革コンサルタントリーダー／講師</span></div></article>
+                                <article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:1530px;height:420px;"><div class="time-label text-amber-600 font-black">12:30 - 13:30</div><div class="session-content">Employee Success実現のための社内コーチング＆キャリアカウンセリング戦略</div><div class="speaker-lines text-amber-800">平山 鋼之介<span>｜Sansan株式会社 人事本部 プロフェッショナルコーチ ／ログミー株式会社 執行役員CHRO 人事総務部長 兼 経営管理部長</span></div></article>
+                                <article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2160px;height:420px;"><div class="time-label text-amber-600 font-black">14:00 - 15:00</div><div class="session-content">若手社員の離職防止に繋がる人事制度のポイント</div><div class="speaker-lines text-amber-800">中島 裕庫<span>｜株式会社ment</span></div></article>
+                                <article class="session-card bg-amber-50 border-amber-200 text-amber-900 time-amber" style="top:2790px;height:420px;"><div class="time-label text-amber-600 font-black">15:30 - 16:30</div><div class="session-content">【サービス体験会】図工をツールとした共創ワークショップ（powered by anohi）</div><div class="speaker-lines text-amber-800">井上 陽介<span>｜anohi 代表</span></div></article>
                             </div>
                         </div>
 
