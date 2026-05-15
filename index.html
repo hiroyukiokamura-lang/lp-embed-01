@@ -41,18 +41,25 @@
         .climbers-stage-header { background: radial-gradient(circle at 18% 20%, rgba(251, 191, 36, 0.4), transparent 30%), linear-gradient(135deg, #111827 0%, #431407 48%, #f97316 100%); color: #fff7ed; box-shadow: inset 0 -1px 0 rgba(255,255,255,0.2); }
         .climbers-card { left: 14px; right: 12px; width: auto; border-color: rgba(249, 115, 22, 0.6); background: linear-gradient(135deg, rgba(255, 247, 237, 1) 0%, rgba(254, 243, 199, 1) 100%); color: #431407; }
         .climbers-time { color: #c2410c; margin-bottom: 10px; font-weight: 800; font-size: 14px; }
-        .climbers-title { font-size: 18px; line-height: 1.55; font-weight: 950; color: #431407; letter-spacing: -0.01em; }
-        .climbers-card.is-compact { padding: 8px 14px; display: flex; align-items: center; gap: 12px; }
-        .climbers-card.is-compact .climbers-time { font-size: 12px; margin-bottom: 0; white-space: nowrap; }
-        .climbers-card.is-compact .climbers-title { font-size: 14px; line-height: 1.3; }
         
-        .climbers-card.is-condensed { padding: 10px 14px; }
-        .climbers-card.is-condensed .climbers-time { font-size: 12px; margin-bottom: 4px; }
-        .climbers-card.is-condensed .climbers-title { font-size: 14px; line-height: 1.3; margin-bottom: 0; }
-        .climbers-card.is-condensed .speaker-lines { margin-top: 6px; padding-top: 6px; font-size: 11px; line-height: 1.3; }
+        /* 統一：Climbersのタイトルフォントサイズを他ステージと同じ17pxに設定 */
+        .climbers-title { font-size: 17px; line-height: 1.45; font-weight: 950; color: #431407; letter-spacing: -0.01em; }
+        
+        /* 10分枠用（Opening/Closing）：サイズは落とさず配置のみ調整 */
+        .climbers-card.is-compact { padding: 6px 14px; display: flex; align-items: center; gap: 12px; }
+        .climbers-card.is-compact .climbers-time { font-size: 14px; margin-bottom: 0; white-space: nowrap; }
+        .climbers-card.is-compact .climbers-title { font-size: 17px; line-height: 1.2; }
+        
+        /* 20分枠用：フォントサイズは大きいまま維持し、パディングのみ凝縮 */
+        .climbers-card.is-condensed { padding: 8px 14px; }
+        .climbers-card.is-condensed .climbers-time { font-size: 14px; margin-bottom: 2px; }
+        .climbers-card.is-condensed .climbers-title { font-size: 17px; line-height: 1.3; margin-bottom: 0; }
+        .climbers-card.is-condensed .speaker-lines { margin-top: 4px; padding-top: 4px; font-size: 14px; line-height: 1.3; }
 
+        /* 統一：登壇者情報の基本サイズを14pxに設定 */
         .speaker-lines { margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(15, 23, 42, 0.15); font-size: 14px; line-height: 1.6; font-weight: 800; }
         .speaker-lines span { color: inherit; opacity: 0.88; font-weight: 700; font-size: 0.95em; }
+        
         .stage-kicker { margin-bottom: 6px; color: #64748b; font-size: 11px; font-weight: 900; letter-spacing: .08em; text-align: center; }
         .stage-title { margin: 0; font-size: 24px; line-height: 1.2; font-weight: 950; text-align: center; letter-spacing: -0.02em; }
         @media (max-width: 768px) { .timetable-wrapper { min-width: 3200px; } }
